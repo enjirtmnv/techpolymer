@@ -1,8 +1,10 @@
 .albom {
   width: 100%;
-  height: 100%;
-  padding: 7.7rem 0 2.4rem 0;
-  background-color: #ffffff;
+  &__wrap{
+    padding: 7.7rem 0 2.4rem 0;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
   &__list {
     display: flex;
     flex-direction: row;
