@@ -1,0 +1,53 @@
+.our-production {
+  background-color: #ffffff;
+  .our-production-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14rem 0 0 0;
+
+    &__text-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    &__info {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.6rem;
+      line-height: 3.12;
+      color: #9FACC4;
+    }
+
+    &__title {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 4rem;
+      line-height: 1.25;
+      color: #202020;
+    }
+
+    &__button {
+      width: 23.7rem;
+      height: 6rem;
+      background-color: #BDDB3C;
+      //filter: drop-shadow(15px 15px 60px #A7B1C4);
+      //box-shadow: 15px 15px 60px #A7B1C4;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+  }
+}

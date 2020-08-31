@@ -1,0 +1,203 @@
+.catalog {
+  margin: 8.9rem 0 0 0;
+
+  .catalog-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 2.6rem 0;
+
+    &__text-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0 0 1.1rem 0;
+    }
+
+    &__info {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.6rem;
+      line-height: 3.12;
+      color: #9FACC4;
+    }
+
+    &__title {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 4rem;
+      line-height: 1.25;
+      color: #FFFFFF;
+    }
+
+    &__subtitle {
+      font-family: "Circe-Light", serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1.8rem;
+      line-height: 2.78;
+      color: #FFFFFF;
+    }
+
+    &__button {
+      width: 23.7rem;
+      height: 6rem;
+      background-color: #BDDB3C;
+      //filter: drop-shadow(15px 15px 60px #A7B1C4);
+      //box-shadow: 15px 15px 60px #A7B1C4;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+
+  }
+
+  .catalog-application {
+    width: 100%;
+    background: linear-gradient(176.11deg, #CDCFDC 24.83%, #97A4BA 69.6%);
+    //transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: relative;
+    margin: 0 0 4rem 0;
+    &__back-img{
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    &__wrap{
+      padding: 4.2rem 0 9.2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      z-index: 2;
+    }
+
+
+    &__info {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.5rem;
+      line-height: 1.67;
+      color: #9FACC4;
+      margin: 0 0 0.6rem 3.1rem;
+    }
+
+    &__title {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 4rem;
+      line-height: 1.25;
+      color: #FFFFFF;
+      margin: 0 0 2.6rem 3.1rem;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 48.2rem;
+      margin: 0 0 0 3.5rem;
+      li {
+        font-family: "Circe-Light", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.6rem;
+        line-height: 1.87;
+        color: #FFFFFF;
+        width: 50%;
+      }
+    }
+
+    &__button {
+      font-family: "Circe-Light", serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: #FFFFFF;
+      margin: 3.1rem 0 0 3.5rem;
+      position: relative;
+      display: block;
+      &::after{
+        content: "";
+        position: absolute;
+        background-image: url("../img/icons/after-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center 0.4rem;
+        background-size: 2rem auto;
+        width: 2.1rem;
+        height: 2.4rem;
+        margin: 0 0 0 1.3rem;
+      }
+    }
+  }
+
+  .catalog-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -1.85rem -1.85rem;
+      a{
+        flex: 0 0 calc(100%/5 - 3.71rem);
+        height: 41.6rem;
+        margin: 1.85rem;
+        background: linear-gradient(176.11deg, #CDCFDC 24.83%, #97A4BA 69.6%);
+        position: relative;
+
+        display: block;
+        img{
+          position: absolute;
+          object-fit: contain;
+          object-position: bottom;
+          width: 100%;
+          height: 100%;
+
+        }
+        &:hover{
+          background: linear-gradient(176.11deg, #BDDB3C 24.83%, #EFFFAB 69.6%);
+        }
+      }
+
+    &__text-wrap{
+      padding: 4.2rem 0 0 3.1rem;
+      width: 82.2%;
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    &__amount{
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.5rem;
+      line-height: 1.67;
+      color: #9FACC4;
+    }
+
+    &__name{
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 2.5rem;
+      line-height: 1;
+      color: #FFFFFF;
+      margin: 2rem 0 0 0;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.header-nav {
+  border-bottom: 0.1rem solid #DEDCE4;;
+  .nav {
+    max-width: 100%;
+    height: 7.5rem;
+    display: flex;
+
+    &__list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__item {
+      display: flex;
+    }
+
+    &__logo{
+      width: 22.023rem;
+      margin:0 1.853rem 0 -0.4rem;
+      img {
+        max-width: 100%;
+      }
+    }
+
+
+    &__name{
+      color: #202020;
+      font-family: 'Circe-Light', serif;
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 2.5;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    &__request-call{
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__request-call-text{
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.6rem;
+      line-height: 2.5;
+      color: #9FACC4;
+      text-decoration-line: underline;
+    }
+    &__icon-request-call{
+      width: 2.603rem;
+      margin: 0.3rem 0.36rem 0 0.601rem;
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__phone-email-wrap{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    &__phone-email-text-wrap{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    &__phone-text{
+      color: #202020;
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 2rem;
+      line-height: 1;
+    }
+    &__email-text{
+      color: #9FACC4;
+      font-family: 'Circe-Regular', serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.6rem;
+      line-height: 1.25;
+    }
+    &__icon-phone{
+      width: 2.603rem;
+      margin:0 0 0 1.401rem;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Circe-Bold";
+  src: url("./fonts/CRC65.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/CRC65.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/CRC65.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/CRC65.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/CRC65.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/CRC65.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/CRC65.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

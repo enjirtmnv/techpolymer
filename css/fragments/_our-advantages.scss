@@ -1,0 +1,138 @@
+.our-advantages {
+  background-color: #ffffff;
+  .advantage {
+    padding: 13.3rem 0 14.8rem 0;
+    background-color: #ffffff;
+    position: relative;
+
+    &__back-img {
+      position: absolute;
+      object-fit: contain;
+      object-position: top;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .advantages-header {
+      padding: 9.1rem 0 0 7.4rem;
+      position: relative;
+      z-index: 2;
+
+      &__text-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        //padding: 0 0 1.1rem 0;
+      }
+
+      &__info {
+        font-family: "Circe-Bold", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.6rem;
+        line-height: 3.12;
+        color: #202020;
+      }
+
+      &__title {
+        font-family: "Circe-Bold", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 4rem;
+        line-height: 1.25;
+        color: #202020;
+      }
+
+      &__subtitle {
+        font-family: "Circe-Regular", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.8rem;
+        line-height: 2.78;
+        color: #202020;
+      }
+    }
+
+    .advantages-list {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: row;
+      margin: 0 6.15rem;
+      li{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis: 0;
+        margin: 0 1.25rem;
+        img{
+          height: 23.6rem;
+          width: 100%;
+          margin: 6.3rem 0 0 0;
+          filter: drop-shadow(15px 15px 60px #A7B1C4);
+        }
+        &:nth-child(1){
+          flex-grow: 1;
+          img{
+            background: linear-gradient(176.11deg, #A9B4C9 24.83%, #DAD9E2 69.6%);
+            object-fit: contain;
+            object-position: right bottom;
+          }
+        }
+        &:nth-child(2){
+          flex-grow: 1;
+          img{
+            object-fit: cover;
+          }
+        }
+        &:nth-child(3){
+          flex-grow: 2;
+          img{
+            object-fit: cover;
+          }
+        }
+        &:nth-child(4){
+          flex-grow: 1;
+          img{
+            background: linear-gradient(176.11deg, #A9B4C9 24.83%, #DAD9E2 69.6%);
+            object-fit: contain;
+            object-position: left bottom;
+          }
+        }
+
+      }
+
+
+      &__number {
+        font-family: "Circe-Bold", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.5rem;
+        line-height: 1.33;
+        color: #BDDB3C;
+        margin: 3.9rem 0 2rem 0;
+      }
+
+      &__title {
+        font-family: "Circe-Regular", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.8rem;
+        line-height: 1.11;
+        color: #000000;
+        margin: 0 0 2rem 0;
+      }
+
+      &__subtitle {
+        font-family: "Circe-Light", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.5rem;
+        line-height: 1.33;
+        color: #000000;
+      }
+    }
+  }
+}

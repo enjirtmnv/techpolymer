@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Circe-Bold";
+  src: url("../../fonts/Circe-Bold/fonts/CRC65.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Circe-Bold/fonts/CRC65.eot?#iefix") format("embedded-opentype"), url("../../fonts/Circe-Bold/fonts/CRC65.otf") format("opentype"), url("../../fonts/Circe-Bold/fonts/CRC65.svg") format("svg"), url("../../fonts/Circe-Bold/fonts/CRC65.ttf") format("truetype"), url("../../fonts/Circe-Bold/fonts/CRC65.woff") format("woff"), url("../../fonts/Circe-Bold/fonts/CRC65.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe-ExtraBold";
+  src: url("../../fonts/Circe-ExtraBold/fonts/CRC75.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Circe-ExtraBold/fonts/CRC75.eot?#iefix") format("embedded-opentype"), url("../../fonts/Circe-ExtraBold/fonts/CRC75.otf") format("opentype"), url("../../fonts/Circe-ExtraBold/fonts/CRC75.svg") format("svg"), url("../../fonts/Circe-ExtraBold/fonts/CRC75.ttf") format("truetype"), url("../../fonts/Circe-ExtraBold/fonts/CRC75.woff") format("woff"), url("../../fonts/Circe-ExtraBold/fonts/CRC75.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe-Light";
+  src: url("../../fonts/Circe-Light/fonts/CRC35.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Circe-Light/fonts/CRC35.eot?#iefix") format("embedded-opentype"), url("../../fonts/Circe-Light/fonts/CRC35.otf") format("opentype"), url("../../fonts/Circe-Light/fonts/CRC35.svg") format("svg"), url("../../fonts/Circe-Light/fonts/CRC35.ttf") format("truetype"), url("../../fonts/Circe-Light/fonts/CRC35.woff") format("woff"), url("../../fonts/Circe-Light/fonts/CRC35.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe-Regular";
+  src: url("../../fonts/Circe-Regular/fonts/CRC55.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Circe-Regular/fonts/CRC55.eot?#iefix") format("embedded-opentype"), url("../../fonts/Circe-Regular/fonts/CRC55.otf") format("opentype"), url("../../fonts/Circe-Regular/fonts/CRC55.svg") format("svg"), url("../../fonts/Circe-Regular/fonts/CRC55.ttf") format("truetype"), url("../../fonts/Circe-Regular/fonts/CRC55.woff") format("woff"), url("../../fonts/Circe-Regular/fonts/CRC55.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MyriadPro-Black";
+  src: url("../../fonts/MyriadPro-Black/fonts/MyriadPro-Black.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/MyriadPro-Black/fonts/MyriadPro-Black.eot?#iefix") format("embedded-opentype"), url("../../fonts/MyriadPro-Black/fonts/MyriadPro-Black.otf") format("opentype"), url("../../fonts/MyriadPro-Black/fonts/MyriadPro-Black.svg") format("svg"), url("../../fonts/MyriadPro-Black/fonts/MyriadPro-Black.ttf") format("truetype"), url("../../fonts/MyriadPro-Black/fonts/MyriadPro-Black.woff") format("woff"), url("../../fonts/MyriadPro-Black/fonts/MyriadPro-Black.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("../../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.otf") format("opentype"), url("../../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.svg") format("svg"), url("../../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.ttf") format("truetype"), url("../../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.woff") format("woff"), url("../../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MyriadPro-Semibold";
+  src: url("../../fonts/MyriadPro-Semibold/fonts/MyriadPro-Semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/MyriadPro-Semibold/fonts/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../../fonts/MyriadPro-Semibold/fonts/MyriadPro-Semibold.otf") format("opentype"), url("../../fonts/MyriadPro-Semibold/fonts/MyriadPro-Semibold.svg") format("svg"), url("../../fonts/MyriadPro-Semibold/fonts/MyriadPro-Semibold.ttf") format("truetype"), url("../../fonts/MyriadPro-Semibold/fonts/MyriadPro-Semibold.woff") format("woff"), url("../../fonts/MyriadPro-Semibold/fonts/MyriadPro-Semibold.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MyriadSetPro-Medium";
+  src: url("../../fonts/MyriadSetPro-Medium/fonts/MyriadSetProMedium.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/MyriadSetPro-Medium/fonts/MyriadSetProMedium.eot?#iefix") format("embedded-opentype"), url("../../fonts/MyriadSetPro-Medium/fonts/MyriadSetProMedium.otf") format("opentype"), url("../../fonts/MyriadSetPro-Medium/fonts/MyriadSetProMedium.svg") format("svg"), url("../../fonts/MyriadSetPro-Medium/fonts/MyriadSetProMedium.ttf") format("truetype"), url("../../fonts/MyriadSetPro-Medium/fonts/MyriadSetProMedium.woff") format("woff"), url("../../fonts/MyriadSetPro-Medium/fonts/MyriadSetProMedium.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*# sourceMappingURL=fonts.css.map */

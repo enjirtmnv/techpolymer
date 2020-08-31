@@ -1,0 +1,54 @@
+.about-company {
+  background-color: #ffffff;
+  &__wrap {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    width: 35.1rem;
+  }
+
+  &__title {
+    font-family: "Circe-Bold", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.475;
+    color: #202020;
+  }
+
+  &__subtitle {
+    font-family: "Circe-Regular", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #202020;
+    margin: 2.7rem 0 0 0;
+  }
+
+  &__title-par {
+    font-family: "Circe-Bold", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.25;
+    color: #202020;
+
+  }
+
+  &__par {
+    font-family: "Circe-Light", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.56;
+    color: #202020;
+    margin: 2.5rem 0 0 0;
+  }
+}

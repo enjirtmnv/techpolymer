@@ -1,0 +1,35 @@
+@import "fragments/set";
+@import "libs/fonts.css";
+
+body {
+}
+
+.container {
+  width: 145rem;
+}
+
+header {
+  background-color: #FFFFFF;
+}
+
+@import "fragments/header-nav";
+@import "fragments/header-categories";
+
+main {
+  .main-product{
+    background: linear-gradient(176.11deg, #DEDCE4 24.83%, #A5B1C7 69.6%);
+    padding: 0 0 15.1rem 0;
+  }
+}
+
+
+@import "fragments/carousel";
+@import "fragments/catalog";
+@import "fragments/our-production";
+@import "fragments/carousel-product";
+@import "fragments/our-advantages";
+@import "fragments/about-company";
+@import "fragments/albom";
+
+
+@import "fragments/footer";
