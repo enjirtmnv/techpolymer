@@ -6,6 +6,9 @@ body {
 
 .container {
   width: 145rem;
+  @media (max-width: 48em) {
+    width: calc(100% - 10rem);
+  }
 }
 
 header {

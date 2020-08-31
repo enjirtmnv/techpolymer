@@ -18,13 +18,22 @@
     background-color: #ffffff;
     width: 78.4895833%;
     position: relative;
-    height: 80.4rem;
+    @media (max-width: 48em) {
+      width: 100%;
+      overflow: hidden;
+    }
   }
 
   &__content {
     display: flex;
     flex-direction: row;
-    padding: 0 0 0 33.1rem;
+    padding: 0 0 5.6rem 33.1rem;
+    @media (max-width: 48em) {
+      flex-direction: column-reverse;
+      padding: 0 0 27.6rem 0;
+      margin: 0 auto;
+      width: calc(100% - 10rem);
+    }
   }
 
   &__text-wrap {
@@ -32,6 +41,10 @@
     flex-direction: column;
     width: 25.1rem;
     margin: 11.8rem 7.4rem 0 0;
+    @media (max-width: 48em) {
+      width: 50.2rem;
+      margin: 5.5rem 0 0 13.4rem;
+    }
   }
 
   &__text-title {
@@ -42,6 +55,10 @@
     font-weight: 700;
     font-style: normal;
     margin: 0 0 2.5rem 0;
+    @media (max-width: 48em) {
+      font-size: 3.2rem;
+      line-height: 1.25;
+    }
   }
 
   &__text-par {
@@ -51,6 +68,10 @@
     line-height: 1.67;
     font-family: "Circe-Light", serif;
     font-weight: 300;
+    @media (max-width: 48em) {
+      font-size: 2.8rem;
+      line-height: 1.43;
+    }
   }
 
   &__img-wrap {
@@ -58,13 +79,16 @@
     flex-direction: column;
     align-items: center;
     margin: 7.4rem 0 0 0;
+    @media (max-width: 48em) {
+      align-items: flex-start;
+      margin: 0;
+    }
   }
 
   &__img {
-    width: 69.5rem;
-    height: 46.2rem;
     img{
-      max-width: 100%;
+      object-fit: contain;
+      width: 69.5rem;
       height: auto;
     }
   }
@@ -76,7 +100,10 @@
     color: #9FACC4;
     font-family: "Circe-Bold", serif;
     font-weight: 700;
-    margin: 0 0 1.7rem;
+    @media (max-width: 48em) {
+      font-size: 2.8rem;
+      line-height: 2.14;
+    }
   }
 
   &__img-title {
@@ -86,16 +113,24 @@
     color: #202020;
     font-family: "Circe-Bold", serif;
     font-weight: 700;
+    @media (max-width: 48em) {
+      font-size: 5rem;
+      line-height: 1.2;
+    }
   }
 
   &__img-subtitle {
     font-size: 1.8rem;
     line-height: 1.78;
     color: #202020;
-    font-family: "Circe-Light", serif;
-    font-weight: 300;
+    font-family: "Circe-Regular", serif;
+    font-weight: 400;
     font-style: normal;
-    margin: 0 0 1.7rem 0;
+    margin: 0.4rem 0 1.7rem 0;
+    @media (max-width: 48em) {
+      font-size: 2.8rem;
+      line-height: 2.14;
+    }
   }
 
   &__img-button {
@@ -111,19 +146,27 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 48em) {
+      width: 40.15rem;
+      height: 10rem;
+      line-height: 1.47;
+      font-size: 3rem;
+    }
   }
 
 
   &__swiper-pagination {
-    //z-index: 10;
     position: absolute;
     display: inline-flex;
-    //justify-content: center;
-    //align-items: center;
     flex-direction: column;
     width: 6.6rem;
     bottom: 37.2rem;
     left: 23.5rem;
+    @media (max-width: 48em) {
+      left: 5rem;
+      width: 8.8rem;
+      bottom: 32rem;
+    }
   }
 
   &__swiper-pagination-bullet {
@@ -140,6 +183,10 @@
     justify-content: center;
     margin: 2.4rem 0;
     cursor: pointer;
+    @media (max-width: 48em) {
+      font-size: 3rem;
+      margin: 3.6rem 0;
+    }
   }
 
   &__swiper-pagination-bullet-active {
@@ -153,6 +200,12 @@
     border-radius: 50%;
     margin: 1.95rem 0;
     outline: none;
+    @media (max-width: 48em) {
+      width: 8.8rem;
+      height: 8.8rem;
+      margin: 2.44rem 0;
+      border: 1.345rem solid #BDDB3C;
+    }
   }
 
   &__swiper-button-prev::after,
@@ -174,15 +227,27 @@
     position: absolute;
     bottom: 5.9rem;
     cursor: pointer;
+    @media (max-width: 48em) {
+      width: 9.974rem;
+      height: 9.974rem;
+      background-size: 1.88rem;
+      background-position: center center;
+    }
   }
 
   &__swiper-button-prev {
     background-image: url("../img/icons/left-arrow.svg");
     left: 23.6rem;
+    @media (max-width: 48em) {
+      left: 5rem;
+    }
   }
 
   &__swiper-button-next {
     background-image: url("../img/icons/right-arrow.svg");
     right: 23.54rem;
+    @media (max-width: 48em) {
+      right: 39.6rem;
+    }
   }
 }
