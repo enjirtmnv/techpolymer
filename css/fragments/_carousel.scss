@@ -240,17 +240,17 @@
 
   &__swiper-button-prev {
     background-image: url("../img/icons/left-arrow.svg");
-    left: 23.6rem;
+    left: 12.3%;
     @media (max-width: 48em) {
-      left: 5rem;
+      left: 6.67%;
     }
   }
 
   &__swiper-button-next {
     background-image: url("../img/icons/right-arrow.svg");
-    right: 23.54rem;
+    right: 12.3%;
     @media (max-width: 48em) {
-      right: 39.6rem;
+      right: 59.47%;
     }
   }
 }

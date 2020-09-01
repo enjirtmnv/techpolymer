@@ -4,32 +4,57 @@
     padding: 7.7rem 0 2.4rem 0;
     background-color: #ffffff;
     overflow: hidden;
+    @media (max-width: 48em) {
+      flex-wrap: wrap;
+      padding: 8.5rem 0 3.2rem 0;
+    }
   }
   &__list {
     display: flex;
     flex-direction: row;
     margin: 0 -1rem;
+    @media (max-width: 48em) {
+      flex-wrap: wrap;
+      margin: -1.6rem;
+    }
     li {
       flex-basis: 0;
       margin: 0 1rem;
+      @media (max-width: 48em) {
+        flex-basis: auto;
+        margin: 1.6rem;
+      }
       img {
         height: 30.4rem;
         width: 100%;
-        //margin: 6.3rem 0 0 0;
         object-fit: cover;
+        @media (max-width: 48em) {
+          height: 37.2rem;
+        }
       }
-
 
       &:nth-child(1) {
         flex-grow: 1;
+        @media (max-width: 48em) {
+          flex-grow: 1;
+          max-width: calc(50% - 3.2rem);
+        }
       }
 
       &:nth-child(2) {
         flex-grow: 1.21;
+        @media (max-width: 48em) {
+          flex-grow: 1;
+          max-width: calc(50% - 3.2rem);
+        }
       }
 
       &:nth-child(3) {
         flex-grow: 1;
+        @media (max-width: 48em) {
+          flex-grow: 2;
+          max-width: 100%;
+        }
       }
     }
   }
