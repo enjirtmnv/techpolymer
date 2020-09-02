@@ -1,6 +1,6 @@
 .header-nav {
+  background-color: #FFFFFF;
   border-bottom: 0.1rem solid #DEDCE4;;
-
   .nav {
     max-width: 100%;
     display: flex;
@@ -31,7 +31,7 @@
       }
     }
 
-    &__mobile-menu {
+    &__mobile-burger {
       display: none;
       @media (max-width: 48em) {
         display: block;

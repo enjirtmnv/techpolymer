@@ -14,12 +14,11 @@ body {
 
 
 header {
-  background-color: #FFFFFF;
-  @media (max-width: 48em) {
-    position: relative;
-    z-index: 2;
-    box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
-  }
+  //@media (max-width: 48em) {
+  //  position: relative;
+  //  //z-index: 2;
+  //  box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
+  //}
 }
 
 @import "fragments/header-nav";
