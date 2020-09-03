@@ -16,11 +16,23 @@
 // });
 
 $(document).ready(function () {
-    // $('.categories__item-all-categories').click(function (event) {
-    $('.nav__mobile-burger').click(function (event) {
-        $('.categories__menu-wrapper').toggleClass('show');
-        $('.categories__wrapper').toggleClass('hidden');
+
+    // $('.nav__mobile-burger').click(function (event) {
+    //     $('.categories__menu-wrapper').toggleClass('show');
+    //     $('.categories__wrapper').toggleClass('hidden');
+    // })
+
+    $('.categories__item-all-categories').click(function (event) {
+        $('.categories__menu-wrapper').addClass('show');
+        $('.categories__wrapper').addClass('hidden');
     })
+
+    $('.categories__nav-item').click(function (event) {
+        $('.categories__menu-wrapper').removeClass('show');
+        $('.categories__wrapper').removeClass('hidden');
+    })
+
+
 });
 
 

@@ -471,7 +471,7 @@ input[type=number] {
   display: block;
 }
 .header-categories .categories__menu-inner {
-  background-color: hotpink;
+  background-color: #ffffff;
   padding: 0 5rem 5.6rem 5rem;
 }
 .header-categories .categories__nav-name {
@@ -499,14 +499,16 @@ input[type=number] {
   height: 3.4rem;
   border: 1px solid #EBEEF2;
   border-radius: 50%;
-  left: -0.1rem;
+  left: 0;
+}
+.header-categories .categories__menu-item {
+  margin: 0 0 4rem 0;
 }
 .header-categories .categories__menu-item-link {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  margin: 0 0 4rem 0;
 }
 .header-categories .categories__menu-img {
   object-fit: contain;
