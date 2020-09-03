@@ -1,0 +1,38 @@
+{
+  "name": "techpolymer-eco",
+  "version": "1.0.0",
+  "description": "Проверить работу можно здесь https://enjirtmnv.github.io/techpolymer-eco/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enjirtmnv/techpolymer-eco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enjirtmnv/techpolymer-eco/issues"
+  },
+  "homepage": "https://github.com/enjirtmnv/techpolymer-eco#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "swiper": "^6.1.3",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.1.0",
+    "html-loader": "^1.3.0",
+    "html-webpack-plugin": "^4.4.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

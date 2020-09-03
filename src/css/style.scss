@@ -1,0 +1,47 @@
+@import "./fragments/set";
+@import "./libs/fonts.css";
+
+body {
+}
+
+.container {
+  width: 145rem;
+  @media (max-width: 48em) {
+    width: calc(100% - 10rem);
+  }
+}
+
+
+
+header {
+  //@media (max-width: 48em) {
+  //  position: relative;
+  //  //z-index: 2;
+  //  box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
+  //}
+}
+
+@import "fragments/header-nav";
+@import "fragments/header-categories";
+
+main {
+  .main-product{
+    background: linear-gradient(176.11deg, #DEDCE4 24.83%, #A5B1C7 69.6%);
+    padding: 0 0 15.1rem 0;
+    @media (max-width: 48em) {
+      padding: 0 0 10.2rem 0;
+    }
+  }
+}
+
+
+@import "fragments/carousel";
+@import "fragments/catalog";
+@import "fragments/our-production";
+@import "fragments/carousel-product";
+@import "fragments/our-advantages";
+@import "fragments/about-company";
+@import "fragments/albom";
+
+
+@import "fragments/footer";

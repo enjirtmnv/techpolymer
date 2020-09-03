@@ -1,0 +1,318 @@
+.catalog {
+  .catalog-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8.9rem 0 2.6rem 0;
+    @media (max-width: 48em) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: 11.1rem 0 6rem 0;
+    }
+
+    &__text-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0 0 1.1rem 0;
+    }
+
+    &__info {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.6rem;
+      line-height: 3.12;
+      color: #9FACC4;
+      @media (max-width: 48em) {
+        font-size: 2.8rem;
+        line-height: 2.86;
+      }
+    }
+
+    &__title {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 4rem;
+      line-height: 1.25;
+      color: #FFFFFF;
+      @media (max-width: 48em) {
+        font-size: 5rem;
+        line-height: 1.6;
+      }
+    }
+
+    &__subtitle {
+      font-family: "Circe-Light", serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1.8rem;
+      line-height: 2.78;
+      color: #FFFFFF;
+      @media (max-width: 48em) {
+        font-size: 2.8rem;
+        line-height: 2.86;
+      }
+    }
+
+    &__button {
+      width: 23.7rem;
+      height: 6rem;
+      background-color: #BDDB3C;
+      box-shadow: 15px 15px 60px #A7B1C4;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      color: #FFFFFF;
+      @media (max-width: 48em) {
+        width: 40.15rem;
+        height: 10rem;
+        font-size: 3rem;
+        line-height: 1.46;
+      }
+    }
+
+  }
+
+  .catalog-application {
+    width: 100%;
+    background: linear-gradient(176.11deg, #CDCFDC 24.83%, #97A4BA 69.6%);
+    position: relative;
+    margin: 0 0 4rem 0;
+    overflow: hidden;
+    @media (max-width: 48em) {
+      margin: 0 0 3.4rem 0;
+    }
+
+    &__back-img {
+      position: absolute;
+      object-fit: contain;
+      object-position: right center;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      @media (max-width: 48em) {
+        display: none;
+      }
+    }
+
+    &__back-img-mobile {
+      display: none;
+      position: absolute;
+      object-fit: cover;
+      object-position: 11rem bottom;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      @media (max-width: 48em) {
+        display: block;
+
+      }
+    }
+
+    &__wrap {
+      padding: 4.2rem 0 9.2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      z-index: 2;
+      @media (max-width: 48em) {
+        padding: 6.4rem 0 5.2rem 0;
+      }
+    }
+
+
+    &__info {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.5rem;
+      line-height: 1.67;
+      color: #9FACC4;
+      margin: 0 0 0.6rem 3.1rem;
+      @media (max-width: 48em) {
+        font-size: 1.8rem;
+        line-height: 1.66;
+        margin: 0 0 1.3rem 3.1rem;
+      }
+    }
+
+    &__title {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 4rem;
+      line-height: 1.25;
+      color: #FFFFFF;
+      margin: 0 0 2.6rem 3.1rem;
+      @media (max-width: 48em) {
+        font-size: 4rem;
+        line-height: 1.33;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 48.2rem;
+      margin: 0 0 0 3.5rem;
+
+      li {
+        font-family: "Circe-Light", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.6rem;
+        line-height: 1.87;
+        color: #FFFFFF;
+        width: 50%;
+        @media (max-width: 48em) {
+          width: 100%;
+          font-size: 2.6rem;
+          line-height: 1.85;
+        }
+      }
+    }
+
+    &__button {
+      font-family: "Circe-Light", serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: #FFFFFF;
+      margin: 3.1rem 0 0 3.5rem;
+      position: relative;
+      display: block;
+
+      &:after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/icons/after-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 2rem auto;
+        width: 2.1rem;
+        height: 2.5rem;
+        margin: 0 0 0 1.3rem;
+        @media (max-width: 48em) {
+          width: 2.9rem;
+          height: 7.7rem;
+          background-size: 2.8rem auto;
+        }
+      }
+
+      @media (max-width: 48em) {
+        width: 100%;
+        margin: 0 0 0 3.5rem;
+        font-size: 2.6rem;
+        line-height: 3.1;
+      }
+    }
+  }
+
+  .catalog-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -1.85rem;
+    @media (max-width: 48em) {
+      margin: -1.6rem;
+    }
+
+    a {
+      flex: 0 0 calc(100% / 5 - 3.7rem);
+      height: 41.6rem;
+      margin: 1.85rem;
+      background: linear-gradient(176.11deg, #CDCFDC 24.83%, #97A4BA 69.6%);
+      position: relative;
+      display: block;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        background: linear-gradient(176.11deg, #BDDB3C 24.83%, #EFFFAB 69.6%);
+      }
+
+      @media (max-width: 48em) {
+        flex: 0 0 calc(100% / 2 - 3.3rem);
+        margin: 1.6rem;
+        &:hover {
+          background: linear-gradient(176.11deg, #CDCFDC 24.83%, #97A4BA 69.6%);
+        }
+      }
+    }
+
+    a:nth-child(1) img, a:nth-child(5) img{
+       object-fit: contain;
+       object-position: right bottom;
+     }
+
+    a:nth-child(2) img{
+      object-fit: contain;
+      object-position: center bottom;
+    }
+
+    a:nth-child(3) img, a:nth-child(6) img, a:nth-child(7) img, a:nth-child(8) img, a:nth-child(10) img{
+      object-fit: contain;
+      object-position: left bottom;
+    }
+
+    a:nth-child(4) img, a:nth-child(9) img{
+      object-fit: cover;
+      object-position: center bottom;
+    }
+
+
+    &__text-wrap {
+      padding: 4.2rem 0 0 3.1rem;
+      width: 82.2%;
+      display: inline-flex;
+      flex-direction: column;
+      @media (max-width: 48em) {
+        width: 88.96%;
+      }
+    }
+
+    &__amount {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.5rem;
+      line-height: 1.67;
+      color: #9FACC4;
+      @media (max-width: 48em) {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__name {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 2.5rem;
+      line-height: 1;
+      color: #FFFFFF;
+      margin: 2rem 0 0 0;
+      @media (max-width: 48em) {
+        font-size: 3rem;
+        line-height: 1;
+      }
+    }
+  }
+}
