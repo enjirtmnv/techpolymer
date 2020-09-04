@@ -2,6 +2,11 @@
 @import "./libs/fonts.css";
 
 body {
+  //@media (max-width: 48em) {
+  //  .lock{
+  //    overflow: hidden;
+  //  }
+  //}
 }
 
 .container {
@@ -14,15 +19,11 @@ body {
 
 
 header {
-  //@media (max-width: 48em) {
-  //  position: relative;
-  //  //z-index: 2;
-  //  box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
-  //}
 }
 
 @import "fragments/header-nav";
 @import "fragments/header-categories";
+@import "fragments/burger";
 
 main {
   .main-product{

@@ -60,6 +60,10 @@
       font-size: 1.8rem;
       line-height: 1.5;
       color: #FFFFFF;
+      &:hover{
+        box-shadow: 1rem 0 2.2rem #d1d1df;
+        transition: box-shadow 400ms ease;
+      }
       @media (max-width: 48em) {
         position: absolute;
         width: 36.6rem;
@@ -68,6 +72,9 @@
         line-height: 1.47;
         top: 88.2rem;
         z-index: 2;
+        &:hover{
+          box-shadow: none;
+        }
       }
     }
   }

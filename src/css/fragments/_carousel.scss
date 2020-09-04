@@ -148,14 +148,21 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    transition: box-shadow 400ms ease;
+    &:hover{
+      box-shadow: 1rem 0.5rem 3rem #d1d1df;
+      transition: box-shadow 400ms ease;
+    }
     @media (max-width: 48em) {
       width: 40.15rem;
       height: 10rem;
       line-height: 1.47;
       font-size: 3rem;
+      &:hover{
+        box-shadow: none;
+      }
     }
   }
-
 
   &__swiper-pagination {
     position: absolute;
@@ -229,12 +236,20 @@
     position: absolute;
     bottom: 5.9rem;
     cursor: pointer;
+    transition: box-shadow 400ms ease;
+    &:hover{
+      box-shadow: 1rem 1rem 6rem 0.7rem #A7B1C4;
+      transition: box-shadow 400ms ease;
+    }
     @media (max-width: 48em) {
       width: 9.974rem;
       height: 9.974rem;
       background-size: 1.88rem;
       background-position: center center;
       bottom: 12.43rem;
+      &:hover{
+        box-shadow: 1.5rem 1.5rem 6rem #A7B1C4;
+      }
     }
   }
 

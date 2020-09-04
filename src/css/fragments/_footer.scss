@@ -34,10 +34,18 @@
       font-size: 1.6rem;
       line-height: 2.5;
       color: #202020;
+      transition: color 300ms ease;
+      &:hover{
+        color: #9FACC4;
+        transition: color 300ms ease;
+      }
       @media (max-width: 48em) {
         font-size: 3rem;
         line-height: 2.67;
         width: 44.78%;
+        &:hover {
+          color: #202020;
+        }
       }
     }
   }
@@ -90,10 +98,18 @@
     line-height: 1.46;
     color: #202020;
     margin: 4.6rem 0 0 0;
+    transition: color 300ms ease;
+    &:hover{
+      color: #BDDB3C;
+      transition: color 300ms ease;
+    }
     @media (max-width: 48em) {
       font-size: 3.8rem;
       line-height: 1.46;
       margin: 0;
+      &:hover {
+        color: #202020;
+      }
     }
   }
 
@@ -104,9 +120,17 @@
     font-style: normal;
     font-size: 1.6rem;
     line-height: 1.5;
+    transition: color 300ms ease;
+    &:hover{
+      color: #BDDB3C;
+      transition: color 300ms ease;
+    }
     @media (max-width: 48em) {
       font-size: 2.8rem;
       line-height: 1.5;
+      &:hover {
+        color: #9FACC4;
+      }
     }
   }
 
@@ -140,9 +164,17 @@
     line-height: 2.5;
     color: #9FACC4;
     text-decoration-line: underline;
+    transition: color 300ms ease;
+    &:hover{
+      color: #BDDB3C;
+      transition: color 300ms ease;
+    }
     @media (max-width: 48em) {
       font-size: 2.8rem;
       line-height: 2.85;
+      &:hover {
+        color: #9FACC4;
+      }
     }
   }
 
@@ -167,10 +199,18 @@
       font-size: 1.6rem;
       line-height: 2.5;
       color: #202020;
+      transition: color 300ms ease;
+      &:hover{
+        color: #9FACC4;
+        transition: color 300ms ease;
+      }
       @media (max-width: 48em) {
         font-size: 3rem;
         line-height: 2.67;
-        //width: 55.5%;
+        width: 55.5%;
+        &:hover {
+          color: #202020;
+        }
       }
     }
   }

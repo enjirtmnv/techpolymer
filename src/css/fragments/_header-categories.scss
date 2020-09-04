@@ -1,23 +1,18 @@
 .header-categories {
   background-color: #FFFFFF;
   position: relative;
+  z-index: 2;
   @media (max-width: 48em) {
-    z-index: 2;
     box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
   }
 
   .categories {
 
-
     &__wrapper {
       display: block;
     }
 
-    .hidden{
-      display: none;
-    }
-
-    &__inner{
+    &__inner {
       max-width: 100%;
       display: flex;
       flex-direction: row;
@@ -61,6 +56,15 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      &:hover .categories__name {
+        color: #909cb2;
+        transition: color 300ms ease;
+        @media (max-width: 48em) {
+          color: #202020;
+        }
+      }
+
       @media (max-width: 48em) {
         justify-content: flex-start;
         flex-direction: row;
@@ -68,7 +72,8 @@
       }
     }
 
-    &__img {;
+    &__img {
+      border-radius: 50%;
 
       img {
         object-fit: contain;
@@ -108,6 +113,8 @@
       font-style: normal;
       display: block;
       margin: 1.3rem 0 0 0;
+      transition: color 300ms ease;
+
       @media (max-width: 48em) {
         font-family: "Circe-Regular", serif;
         font-weight: 400;
@@ -117,36 +124,25 @@
         width: 16.8rem;
       }
     }
+  }
 
-    &__menu-wrapper {
-      position: absolute;
 
-      //position: fixed;
-      height: 100%;
-      display: none;
-      width: 100%;
-      z-index: 5;
-      top: 0;
+  .all-categories {
+    position: absolute;
+    //height: 100%;
+    display: none;
+    width: 100%;
+    z-index: 5;
+    top: 0;
 
-    }
-
-    .show {
-      display: block;
-      //top: 0;
-    }
-
-    &__menu-inner{
+    &__inner {
       background-color: #ffffff;
       padding: 0 5rem 5.6rem 5rem;
     }
 
-    &__nav-item {
-
-    }
-
-    &__nav-item-link {
-
-    }
+    //&__nav-item{
+    //  display: none;
+    //}
 
     &__nav-name {
       font-family: "Circe-Bold", serif;
@@ -156,12 +152,11 @@
       line-height: 1.47;
       color: #9FACC4;
       text-align: start;
-      padding: 5rem 0 5rem 4.8rem ;
-      margin: 0 0 6.4rem  0;
+      //margin: 0 0 6.4rem 0;
       border-bottom: 1px solid #EBEEF2;;
       display: block;
       position: relative;
-
+      padding: 5rem 0 5rem 4.8rem;
       &:before {
         content: "";
         position: absolute;
@@ -177,13 +172,13 @@
       }
     }
 
-    &__menu-item{
+    &__menu-item {
       margin: 0 0 4rem 0;
     }
 
-    //&__menu-inner div:nth-of-type(2){
-    //  margin: 6.4rem 0 4rem 0;
-    //}
+    &__inner div:nth-of-type(2){
+      margin: 6.4rem 0 4rem 0;
+    }
 
     &__menu-item-link {
       display: flex;
@@ -210,6 +205,15 @@
       width: 53rem;
     }
   }
+
+  .show {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
 }
 
 
