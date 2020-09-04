@@ -6,6 +6,11 @@ $(document).ready(function () {
         $('.burger').toggleClass('showBurger');
         $('.header-nav').toggleClass('header-nav-fixed');
         $('body').toggleClass('lock');
+        $('.burger-catalog').removeClass('show');
+        $('.burger-about').removeClass('show');
+        $('.burger-rent').removeClass('show');
+        $('.burger-ransom').removeClass('show');
+        $('.burger-contacts').removeClass('show');
         // $('.all-categories').removeClass('show');
         // $('.categories__wrapper').removeClass('hidden');
     });
