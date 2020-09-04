@@ -2,15 +2,13 @@
 @import "./libs/fonts.css";
 
 body {
-  //@media (max-width: 48em) {
-  //  .lock{
-  //    overflow: hidden;
-  //  }
-  //}
+}
+
+.lock{
+  overflow: hidden;
 }
 
 .container {
-  width: 145rem;
   @media (max-width: 48em) {
     width: calc(100% - 10rem);
   }

@@ -77,14 +77,10 @@ ul li {
 }
 
 .container {
-  width: 147rem;
+  width: 145rem;
   margin: 0 auto;
   position: relative;
   max-width: unset;
-}
-
-.hidden {
-  overflow: hidden;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -188,9 +184,10 @@ input[type=number] {
     font-size: 4.4px;
   }
 }
-.container {
-  width: 145rem;
+.lock {
+  overflow: hidden;
 }
+
 @media (max-width: 48em) {
   .container {
     width: calc(100% - 10rem);
@@ -586,7 +583,7 @@ input[type=number] {
 .header-categories .show {
   display: block;
 }
-.header-categories .hidden {
+.header-categories .close {
   display: none;
 }
 
@@ -594,12 +591,10 @@ input[type=number] {
   position: fixed;
   display: none;
   background-color: #ffffff;
-  overflow-x: hidden;
-  overflow-y: auto;
   transform: translateX(-100%);
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 .burger__inner {
@@ -645,6 +640,181 @@ input[type=number] {
   height: 12rem;
 }
 .burger__menu-name {
+  font-family: "Circe-Regular", serif;
+  font-weight: 400;
+  color: #202020;
+  font-style: normal;
+  display: block;
+  font-size: 5rem;
+  line-height: 1.12;
+  padding: 0 0 0 3.5rem;
+  width: 53rem;
+}
+
+.burger-about {
+  display: none;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+}
+.burger-about__inner {
+  background-color: #ffffff;
+}
+.burger-about__menu-item {
+  margin: 0 0 4rem 0;
+}
+.burger-about__menu-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.burger-about__menu-img {
+  object-fit: contain;
+  width: 12rem;
+  height: 12rem;
+}
+.burger-about__menu-name {
+  font-family: "Circe-Regular", serif;
+  font-weight: 400;
+  color: #202020;
+  font-style: normal;
+  display: block;
+  font-size: 5rem;
+  line-height: 1.12;
+  padding: 0 0 0 3.5rem;
+  width: 53rem;
+}
+
+.burger-rent {
+  display: none;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+}
+.burger-rent__inner {
+  background-color: #ffffff;
+}
+.burger-rent__menu-item {
+  margin: 0 0 4rem 0;
+}
+.burger-rent__menu-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.burger-rent__menu-img {
+  object-fit: contain;
+  width: 12rem;
+  height: 12rem;
+}
+.burger-rent__menu-name {
+  font-family: "Circe-Regular", serif;
+  font-weight: 400;
+  color: #202020;
+  font-style: normal;
+  display: block;
+  font-size: 5rem;
+  line-height: 1.12;
+  padding: 0 0 0 3.5rem;
+  width: 53rem;
+}
+
+.burger-ransom {
+  display: none;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+}
+.burger-ransom__inner {
+  background-color: #ffffff;
+}
+.burger-ransom__menu-item {
+  margin: 0 0 4rem 0;
+}
+.burger-ransom__menu-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.burger-ransom__menu-img {
+  object-fit: contain;
+  width: 12rem;
+  height: 12rem;
+}
+.burger-ransom__menu-name {
+  font-family: "Circe-Regular", serif;
+  font-weight: 400;
+  color: #202020;
+  font-style: normal;
+  display: block;
+  font-size: 5rem;
+  line-height: 1.12;
+  padding: 0 0 0 3.5rem;
+  width: 53rem;
+}
+
+.burger-contacts {
+  display: none;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+}
+.burger-contacts__inner {
+  background-color: #ffffff;
+}
+.burger-contacts__menu-item {
+  margin: 0 0 4rem 0;
+}
+.burger-contacts__menu-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.burger-contacts__menu-img {
+  object-fit: contain;
+  width: 12rem;
+  height: 12rem;
+}
+.burger-contacts__menu-name {
+  font-family: "Circe-Regular", serif;
+  font-weight: 400;
+  color: #202020;
+  font-style: normal;
+  display: block;
+  font-size: 5rem;
+  line-height: 1.12;
+  padding: 0 0 0 3.5rem;
+  width: 53rem;
+}
+
+.burger-catalog {
+  display: none;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+}
+.burger-catalog__inner {
+  background-color: #ffffff;
+}
+.burger-catalog__menu-item {
+  margin: 0 0 4rem 0;
+}
+.burger-catalog__menu-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.burger-catalog__menu-img {
+  object-fit: contain;
+  width: 12rem;
+  height: 12rem;
+}
+.burger-catalog__menu-name {
   font-family: "Circe-Regular", serif;
   font-weight: 400;
   color: #202020;
@@ -1900,7 +2070,6 @@ main .main-product {
 .albom__wrap {
   padding: 7.7rem 0 2.4rem 0;
   background-color: #ffffff;
-  overflow: hidden;
 }
 @media (max-width: 48em) {
   .albom__wrap {
