@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 $(document).ready(function () {
 
-    $('.nav__mobile-burger').click(function (event) {
+    $('.nav__mobile-burger').on('click',function (event) {
         $('.burger').toggleClass('showBurger');
         $('.header-nav').toggleClass('header-nav-fixed');
         $('body').toggleClass('lock');
@@ -20,31 +20,31 @@ $(document).ready(function () {
     //     $('.categories__wrapper').removeClass('hidden');
     // });
 
-    $('.burger__catalog').click(function (event) {
+    $('.burger__catalog').on('click',function (event) {
         $('.burger-catalog').toggleClass('show');
         // $('.all-categories').removeClass('show');
         // $('.categories__wrapper').removeClass('hidden');
     });
 
-    $('.burger__about').click(function (event) {
+    $('.burger__about').on('click',function (event) {
         $('.burger-about').toggleClass('show');
         // $('.all-categories').removeClass('show');
         // $('.categories__wrapper').removeClass('hidden');
     });
 
-    $('.burger__rent').click(function (event) {
+    $('.burger__rent').on('click',function (event) {
         $('.burger-rent').toggleClass('show');
         // $('.all-categories').removeClass('show');
         // $('.categories__wrapper').removeClass('hidden');
     });
 
-    $('.burger__ransom').click(function (event) {
+    $('.burger__ransom').on('click',function (event) {
         $('.burger-ransom').toggleClass('show');
         // $('.all-categories').removeClass('show');
         // $('.categories__wrapper').removeClass('hidden');
     });
 
-    $('.burger__contacts').click(function (event) {
+    $('.burger__contacts').on('click',function (event) {
         $('.burger-contacts').toggleClass('show');
         // $('.all-categories').removeClass('show');
         // $('.categories__wrapper').removeClass('hidden');
