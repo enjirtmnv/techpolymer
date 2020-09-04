@@ -28,56 +28,31 @@ $(document).ready(function () {
     $('.burger__catalog').on('click',function (event) {
         $('.burger-catalog').toggleClass('show');
 
-        $('.burger-about').removeClass('show');
-        $('.burger-rent').removeClass('show');
-        $('.burger-ransom').removeClass('show');
-        $('.burger-contacts').removeClass('show');
-        // $('.all-categories').removeClass('show');
-        // $('.categories__wrapper').removeClass('hidden');
+        $('.burger-about, .burger-rent, .burger-ransom, .burger-contacts').removeClass('show');
     });
 
     $('.burger__about').on('click',function (event) {
         $('.burger-about').toggleClass('show');
 
-        $('.burger-catalog').removeClass('show');
-        $('.burger-rent').removeClass('show');
-        $('.burger-ransom').removeClass('show');
-        $('.burger-contacts').removeClass('show');
-        // $('.all-categories').removeClass('show');
-        // $('.categories__wrapper').removeClass('hidden');
+        $('.burger-catalog, .burger-rent, .burger-ransom, .burger-contacts').removeClass('show');
     });
 
     $('.burger__rent').on('click',function (event) {
         $('.burger-rent').toggleClass('show');
 
-        $('.burger-catalog').removeClass('show');
-        $('.burger-about').removeClass('show');
-        $('.burger-ransom').removeClass('show');
-        $('.burger-contacts').removeClass('show');
-        // $('.all-categories').removeClass('show');
-        // $('.categories__wrapper').removeClass('hidden');
+        $('.burger-catalog, .burger-about, .burger-ransom, .burger-contacts').removeClass('show');
     });
 
     $('.burger__ransom').on('click',function (event) {
         $('.burger-ransom').toggleClass('show');
 
-        $('.burger-catalog').removeClass('show');
-        $('.burger-about').removeClass('show');
-        $('.burger-rent').removeClass('show');
-        $('.burger-contacts').removeClass('show');
-        // $('.all-categories').removeClass('show');
-        // $('.categories__wrapper').removeClass('hidden');
+        $('.burger-catalog, .burger-about, .burger-rent, .burger-contacts').removeClass('show');
     });
 
     $('.burger__contacts').on('click',function (event) {
         $('.burger-contacts').toggleClass('show');
 
-        $('.burger-catalog').removeClass('show');
-        $('.burger-about').removeClass('show');
-        $('.burger-rent').removeClass('show');
-        $('.burger-ransom').removeClass('show');
-        // $('.all-categories').removeClass('show');
-        // $('.categories__wrapper').removeClass('hidden');
+        $('.burger-catalog, .burger-about, .burger-rent, .burger-ransom').removeClass('show');
     });
 
 
