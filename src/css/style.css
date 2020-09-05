@@ -596,6 +596,7 @@ input[type=number] {
   left: 0;
   width: 100vw;
   height: 100vh;
+  transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .burger__inner {
   padding: 14.2rem 5rem 2.2rem 5rem;
