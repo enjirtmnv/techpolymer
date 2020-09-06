@@ -1,22 +1,37 @@
 .burger {
   position: fixed;
-  display: none;
   background-color: #ffffff;
-
-  transform: translateX(-100%);
-
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-
-  //overflow-x: hidden;
-  //overflow-y: auto;
-  transition: transform .45s cubic-bezier(.19,1,.22,1);
-  //transition: transform 2s ease;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 500ms cubic-bezier(.19, 1, .22, 1);
+  z-index: 3;
 
   &__inner {
     padding: 14.2rem 5rem 2.2rem 5rem;
+
+  }
+
+  &__nav-item-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__nav-arrow {
+    width: 3.4rem;
+    height: 3.4rem;
+    border: 1px solid #EBEEF2;
+    border-radius: 50%;
+    background-image: url("../img/icons/categories-nav-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 0.6rem 0.8rem;
+    margin: 0 0.8rem 0.3rem 0;
   }
 
   &__nav-name {
@@ -27,23 +42,9 @@
     line-height: 1.47;
     color: #9FACC4;
     text-align: start;
-    padding: 2.8rem 0 2.8rem 4.8rem;
+    padding: 2.8rem 0 2.8rem 0;
     display: block;
     position: relative;
-
-    &:before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/icons/categories-nav-right-arrow.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 0.6rem 0.8rem;
-      width: 3.4rem;
-      height: 3.4rem;
-      border: 1px solid #EBEEF2;
-      border-radius: 50%;
-      left: 0;
-    }
   }
 
   &__menu-item {
@@ -79,7 +80,6 @@
 .burger-about {
   display: none;
   width: 100%;
-  z-index: 5;
   top: 0;
 
   &__inner {
@@ -116,10 +116,10 @@
   }
 
 }
+
 .burger-rent {
   display: none;
   width: 100%;
-  z-index: 5;
   top: 0;
 
   &__inner {
@@ -156,10 +156,10 @@
   }
 
 }
+
 .burger-ransom {
   display: none;
   width: 100%;
-  z-index: 5;
   top: 0;
 
   &__inner {
@@ -196,10 +196,10 @@
   }
 
 }
+
 .burger-contacts {
   display: none;
   width: 100%;
-  z-index: 5;
   top: 0;
 
   &__inner {
@@ -236,10 +236,10 @@
   }
 
 }
+
 .burger-catalog {
   display: none;
   width: 100%;
-  z-index: 5;
   top: 0;
 
   &__inner {
@@ -277,18 +277,22 @@
 
 }
 
-.show {
-  display: block;
-}
 
-.showBurger {
+.show-burger {
   @media (max-width: 48em) {
-    z-index: 3;
-    display: block;
     transform: translateX(0);
   }
 }
 
-.hidden {
-  display: none;
+.show-sub-menu {
+  @media (max-width: 48em) {
+    display: block;
+  }
+}
+
+.arrow-open {
+  @media (max-width: 48em) {
+    background-image: url("../img/icons/categories-nav-down-arrow.svg");
+    background-size: 0.8rem 0.6rem;
+  }
 }
