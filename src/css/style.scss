@@ -14,8 +14,6 @@ body {
   }
 }
 
-
-
 header {
   //overflow-x: hidden;
 }
@@ -23,6 +21,9 @@ header {
 @import "fragments/header-nav";
 @import "fragments/header-categories";
 @import "fragments/burger";
+@import "fragments/list-all-categories";
+@import "fragments/list-application";
+@import "fragments/list-agriculture";
 
 main {
   overflow-x: hidden;
@@ -35,7 +36,6 @@ main {
   }
 }
 
-
 @import "fragments/carousel";
 @import "fragments/catalog";
 @import "fragments/our-production";
@@ -43,6 +43,5 @@ main {
 @import "fragments/our-advantages";
 @import "fragments/about-company";
 @import "fragments/albom";
-
 
 @import "fragments/footer";

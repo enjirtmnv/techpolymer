@@ -19,6 +19,10 @@ module.exports = {
             template: "./src/index.html",
             filename: "./index.html"
         }),
+        // new HtmlWepackPlugin({
+        //     template: "./src/html/index.html",
+        //     filename: "./card-product.html"
+        // }),
         new CleanWebpackPlugin(),
     ],
     module: {

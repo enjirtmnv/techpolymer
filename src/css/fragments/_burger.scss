@@ -8,7 +8,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   transform: translateX(-100%);
-  transition: transform 500ms cubic-bezier(.19, 1, .22, 1);
+  transition: transform 800ms cubic-bezier(.19, 1, .22, 1);
   z-index: 3;
 
   &__inner {
@@ -59,7 +59,7 @@
   }
 
   &__menu-img {
-    img{
+    img {
       object-fit: contain;
       width: 12rem;
       height: 12rem;
@@ -72,10 +72,15 @@
     color: #202020;
     font-style: normal;
     display: block;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.12;
     padding: 0 0 0 3.5rem;
     width: 53rem;
+  }
+
+  &__catalog-arrow{
+    background-image: url("../img/icons/categories-nav-down-arrow.svg");
+    background-size: 0.8rem 0.6rem;
   }
 }
 
@@ -100,7 +105,7 @@
   }
 
   &__menu-img {
-    img{
+    img {
       object-fit: contain;
       width: 12rem;
       height: 12rem;
@@ -113,7 +118,7 @@
     color: #202020;
     font-style: normal;
     display: block;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.12;
     padding: 0 0 0 3.5rem;
     width: 53rem;
@@ -142,7 +147,7 @@
   }
 
   &__menu-img {
-    img{
+    img {
       object-fit: contain;
       width: 12rem;
       height: 12rem;
@@ -155,7 +160,7 @@
     color: #202020;
     font-style: normal;
     display: block;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.12;
     padding: 0 0 0 3.5rem;
     width: 53rem;
@@ -184,7 +189,7 @@
   }
 
   &__menu-img {
-    img{
+    img {
       object-fit: contain;
       width: 12rem;
       height: 12rem;
@@ -197,7 +202,7 @@
     color: #202020;
     font-style: normal;
     display: block;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.12;
     padding: 0 0 0 3.5rem;
     width: 53rem;
@@ -226,7 +231,7 @@
   }
 
   &__menu-img {
-    img{
+    img {
       object-fit: contain;
       width: 12rem;
       height: 12rem;
@@ -239,7 +244,7 @@
     color: #202020;
     font-style: normal;
     display: block;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.12;
     padding: 0 0 0 3.5rem;
     width: 53rem;
@@ -248,7 +253,7 @@
 }
 
 .burger-catalog {
-  display: none;
+  display: block;
   width: 100%;
   top: 0;
 
@@ -268,7 +273,7 @@
   }
 
   &__menu-img {
-    img{
+    img {
       object-fit: contain;
       width: 12rem;
       height: 12rem;
@@ -281,12 +286,11 @@
     color: #202020;
     font-style: normal;
     display: block;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.12;
     padding: 0 0 0 3.5rem;
     width: 53rem;
   }
-
 }
 
 
@@ -302,9 +306,22 @@
   }
 }
 
+.close-sub-menu {
+  @media (max-width: 48em) {
+    display: none;
+  }
+}
+
 .arrow-open {
   @media (max-width: 48em) {
     background-image: url("../img/icons/categories-nav-down-arrow.svg");
     background-size: 0.8rem 0.6rem;
+  }
+}
+
+.arrow-close {
+  @media (max-width: 48em) {
+    background-image: url("../img/icons/categories-nav-right-arrow.svg");
+    background-size: 0.6rem 0.8rem;
   }
 }
