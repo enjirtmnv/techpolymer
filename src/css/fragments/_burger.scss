@@ -300,22 +300,9 @@
   }
 }
 
-.show-sub-menu {
-  @media (max-width: 48em) {
-    display: block;
-  }
-}
-
 .close-sub-menu {
   @media (max-width: 48em) {
     display: none;
-  }
-}
-
-.arrow-open {
-  @media (max-width: 48em) {
-    background-image: url("../img/icons/categories-nav-down-arrow.svg");
-    background-size: 0.8rem 0.6rem;
   }
 }
 

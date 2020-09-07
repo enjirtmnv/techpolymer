@@ -78,8 +78,9 @@
     }
   }
 
-
   &__logo-wrap-mobile {
+    display: flex;
+    justify-content: center;
   }
 
   &__logo-mobile {
