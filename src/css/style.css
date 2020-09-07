@@ -56,11 +56,6 @@ p {
   margin-bottom: 0;
 }
 
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
 .btn {
   border: none;
 }
@@ -572,7 +567,7 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: row;
 }
-.header-categories .all-categories__menu-img {
+.header-categories .all-categories__menu-img img {
   object-fit: contain;
   width: 12rem;
   height: 12rem;
@@ -641,7 +636,7 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: row;
 }
-.header-categories .list-all-categories__menu-img {
+.header-categories .list-all-categories__menu-img img {
   object-fit: contain;
   width: 12rem;
   height: 12rem;
@@ -721,7 +716,7 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: row;
 }
-.header-categories .list-application__menu-img {
+.header-categories .list-application__menu-img img {
   object-fit: contain;
   width: 12rem;
   height: 12rem;
@@ -880,7 +875,7 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: row;
 }
-.burger__menu-img {
+.burger__menu-img img {
   object-fit: contain;
   width: 12rem;
   height: 12rem;
@@ -914,7 +909,7 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: row;
 }
-.burger-about__menu-img {
+.burger-about__menu-img img {
   object-fit: contain;
   width: 12rem;
   height: 12rem;
@@ -948,7 +943,7 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: row;
 }
-.burger-rent__menu-img {
+.burger-rent__menu-img img {
   object-fit: contain;
   width: 12rem;
   height: 12rem;
@@ -982,7 +977,7 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: row;
 }
-.burger-ransom__menu-img {
+.burger-ransom__menu-img img {
   object-fit: contain;
   width: 12rem;
   height: 12rem;
@@ -1016,7 +1011,7 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: row;
 }
-.burger-contacts__menu-img {
+.burger-contacts__menu-img img {
   object-fit: contain;
   width: 12rem;
   height: 12rem;
@@ -1050,7 +1045,7 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: row;
 }
-.burger-catalog__menu-img {
+.burger-catalog__menu-img img {
   object-fit: contain;
   width: 12rem;
   height: 12rem;
