@@ -302,19 +302,23 @@ input[type=number] {
   transition: color 300ms ease;
 }
 @media (max-width: 48em) {
+  .header-nav .nav__request-call-text {
+    display: none;
+  }
   .header-nav .nav__request-call-text:hover {
     color: #9FACC4;
   }
 }
-.header-nav .nav__icon-request-call {
-  margin: 0.3rem 0.36rem 0 0.601rem;
+.header-nav .nav__icon-phone {
+  margin: 0 0 0 0.6rem;
 }
-.header-nav .nav__icon-request-call img {
+.header-nav .nav__icon-phone img {
+  height: 100%;
   width: 2.603rem;
   object-fit: contain;
 }
 @media (max-width: 48em) {
-  .header-nav .nav__icon-request-call img {
+  .header-nav .nav__icon-phone img {
     width: 4rem;
   }
 }
@@ -323,15 +327,15 @@ input[type=number] {
   flex-direction: row;
   align-items: center;
 }
+@media (max-width: 48em) {
+  .header-nav .nav__phone-email-wrap {
+    display: none;
+  }
+}
 .header-nav .nav__phone-email-text-wrap {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-@media (max-width: 48em) {
-  .header-nav .nav__phone-email-text-wrap {
-    display: none;
-  }
 }
 .header-nav .nav__phone-text {
   color: #202020;
@@ -369,16 +373,15 @@ input[type=number] {
     color: #9FACC4;
   }
 }
-.header-nav .nav__icon-phone {
-  margin: 0 0 0 1.401rem;
+.header-nav .nav__icon-email {
+  margin: 0 0 0 1rem;
 }
-.header-nav .nav__icon-phone img {
-  height: 100%;
+.header-nav .nav__icon-email img {
   width: 2.603rem;
   object-fit: contain;
 }
 @media (max-width: 48em) {
-  .header-nav .nav__icon-phone img {
+  .header-nav .nav__icon-email img {
     width: 4rem;
   }
 }
@@ -394,6 +397,7 @@ input[type=number] {
   background-color: #FFFFFF;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 @media (max-width: 48em) {
   .header-categories {
@@ -694,6 +698,17 @@ input[type=number] {
   background-size: 0.6rem 0.8rem;
   margin: 0 0.8rem 0.3rem 0;
 }
+.header-categories .list-application__title-wrap {
+  padding: 0 0 4rem 0;
+}
+.header-categories .list-application__title {
+  font-family: "Circe-Bold", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
+  line-height: 0.76;
+  color: #202020;
+}
 .header-categories .list-application__menu-item {
   margin: 0 0 4rem 0;
 }
@@ -763,6 +778,17 @@ input[type=number] {
   background-size: 0.6rem 0.8rem;
   margin: 0 0.8rem 0.3rem 0;
 }
+.header-categories .list-agriculture__title-wrap {
+  padding: 0 0 4rem 0;
+}
+.header-categories .list-agriculture__title {
+  font-family: "Circe-Bold", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
+  line-height: 0.76;
+  color: #202020;
+}
 .header-categories .list-agriculture__menu-item {
   margin: 0 0 4rem 0;
 }
@@ -775,20 +801,14 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: row;
 }
-.header-categories .list-agriculture__menu-img {
-  object-fit: contain;
-  width: 12rem;
-  height: 12rem;
-}
 .header-categories .list-agriculture__menu-name {
   font-family: "Circe-Regular", serif;
   font-weight: 400;
   color: #202020;
   font-style: normal;
   display: block;
-  font-size: 5rem;
-  line-height: 1.12;
-  padding: 0 0 0 3.5rem;
+  font-size: 3.2rem;
+  line-height: 1.52;
   width: 53rem;
 }
 @media (max-width: 48em) {
@@ -1066,6 +1086,9 @@ input[type=number] {
   }
 }
 
+main {
+  overflow-x: hidden;
+}
 main .main-product {
   background: linear-gradient(176.11deg, #DEDCE4 24.83%, #A5B1C7 69.6%);
   padding: 0 0 15.1rem 0;
@@ -2510,7 +2533,7 @@ main .main-product {
   width: 2.603rem;
   height: 2.603rem;
   object-fit: contain;
-  margin: 0 0 0 0.6rem;
+  margin: 0 0 0.3rem 0.6rem;
 }
 @media (max-width: 48em) {
   .footer__request-call img {

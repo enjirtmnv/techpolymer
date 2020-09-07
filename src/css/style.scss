@@ -17,6 +17,7 @@ body {
 
 
 header {
+  //overflow-x: hidden;
 }
 
 @import "fragments/header-nav";
@@ -24,6 +25,7 @@ header {
 @import "fragments/burger";
 
 main {
+  overflow-x: hidden;
   .main-product{
     background: linear-gradient(176.11deg, #DEDCE4 24.83%, #A5B1C7 69.6%);
     padding: 0 0 15.1rem 0;

@@ -3,6 +3,7 @@
   border-bottom: 0.1rem solid #DEDCE4;
   position: relative;
   z-index: 4;
+
   .nav {
     max-width: 100%;
     display: flex;
@@ -42,7 +43,7 @@
 
     &__burger {
       @media (max-width: 48em) {
-        img{
+        img {
           object-fit: contain;
           width: 4.2rem;
           height: 100%;
@@ -52,11 +53,13 @@
 
     &__logo {
       margin: 0 1.853rem 0 -0.4rem;
+
       img {
         object-fit: contain;
         width: 22rem;
         height: 100%;
       }
+
       @media (max-width: 48em) {
         margin: 0;
         img {
@@ -78,10 +81,12 @@
       display: inline-flex;
       align-items: center;
       transition: color 300ms ease;
-      &:hover{
+
+      &:hover {
         color: #909cb2;
         transition: color 300ms ease;
       }
+
       @media (max-width: 48em) {
         color: #202020;
       }
@@ -101,20 +106,25 @@
       color: #9FACC4;
       text-decoration-line: underline;
       transition: color 300ms ease;
-      &:hover{
+
+      &:hover {
         color: #BDDB3C;
         transition: color 300ms ease;
       }
+
       @media (max-width: 48em) {
+        display: none;
         &:hover {
           color: #9FACC4;
         }
       }
     }
 
-    &__icon-request-call {
-      margin: 0.3rem 0.36rem 0 0.601rem;
+    &__icon-phone {
+      margin: 0 0 0 0.6rem;
+
       img {
+        height: 100%;
         width: 2.603rem;
         object-fit: contain;
         @media (max-width: 48em) {
@@ -127,15 +137,16 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      @media (max-width: 48em) {
+        display: none;
+      }
     }
 
     &__phone-email-text-wrap {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      @media (max-width: 48em) {
-        display: none;
-      }
+
     }
 
     &__phone-text {
@@ -146,10 +157,12 @@
       font-size: 2rem;
       line-height: 1;
       transition: color 300ms ease;
-      &:hover{
+
+      &:hover {
         color: #BDDB3C;
         transition: color 300ms ease;
       }
+
       @media (max-width: 48em) {
         &:hover {
           color: #202020;
@@ -165,10 +178,12 @@
       font-size: 1.6rem;
       line-height: 1.25;
       transition: color 300ms ease;
-      &:hover{
+
+      &:hover {
         color: #BDDB3C;
         transition: color 300ms ease;
       }
+
       @media (max-width: 48em) {
         &:hover {
           color: #9FACC4;
@@ -176,10 +191,9 @@
       }
     }
 
-    &__icon-phone {
-      margin: 0 0 0 1.401rem;
+    &__icon-email {
+      margin: 0 0 0 1rem;
       img {
-        height: 100%;
         width: 2.603rem;
         object-fit: contain;
         @media (max-width: 48em) {
@@ -190,7 +204,7 @@
   }
 }
 
-.header-nav-fixed{
+.header-nav-fixed {
   @media (max-width: 48em) {
     width: 100vw;
     position: fixed;

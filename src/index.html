@@ -32,20 +32,20 @@
                     <li class="nav__item"><a class="nav__name" href="#">Аренда поддонов</a></li>
                     <li class="nav__item"><a class="nav__name" href="#">Выкуп пластика</a></li>
                     <li class="nav__item"><a class="nav__name" href="#">Контакты</a></li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__request-call">
-                            <span class="nav__request-call-text">Заказать звонок</span>
-                            <div class="nav__icon-request-call"><img src="./img/icons/icon-request.svg"
-                                                                     alt="icon-request"></div>
-                        </a>
-                    </li>
                     <li class="nav__item nav__mobile-item">
+                        <div class="nav__request-call">
+                            <a class="nav__request-call-text" href="#">Заказать звонок</a>
+                            <a class="nav__icon-phone" href="#"><img src="./img/icons/icon-phone.svg" alt="icon-phone"></a>
+                        </div>
+                    </li>
+                    <li class="nav__item">
                         <div class="nav__phone-email-wrap">
                             <div class="nav__phone-email-text-wrap">
                                 <a href="#" class="nav__phone-text">8 800 999 99 99</a>
                                 <a href="#" class="nav__email-text">pochta@mail.ru</a>
                             </div>
-                            <a class="nav__icon-phone" href="#"><img src="./img/icons/icon-phone.svg" alt="icon-phone"></a>
+                            <a class="nav__icon-email" href="#"><img src="./img/icons/icon-email.svg"
+                                                                     alt="icon-email"></a>
                         </div>
                     </li>
                 </ul>
@@ -59,7 +59,7 @@
 
             <div class="burger__nav-item burger__about">
                 <a class="burger__nav-item-link" href="#">
-                    <div class="burger__nav-arrow"></div>
+                    <div class="burger__nav-arrow burger__about-arrow"></div>
                     <span class="burger__nav-name">О компании</span>
                 </a>
                 <div class="burger-about">
@@ -87,7 +87,7 @@
 
             <div class="burger__nav-item burger__rent">
                 <a class="burger__nav-item-link" href="#">
-                    <div class="burger__nav-arrow"></div>
+                    <div class="burger__nav-arrow burger__rent-arrow"></div>
                     <span class="burger__nav-name">Аренда поддонов</span>
                 </a>
                 <div class="burger-rent">
@@ -116,7 +116,7 @@
 
             <div class="burger__nav-item burger__ransom">
                 <a class="burger__nav-item-link" href="#">
-                    <div class="burger__nav-arrow"></div>
+                    <div class="burger__nav-arrow burger__ransom-arrow"></div>
                     <span class="burger__nav-name">Выкуп пластика</span>
                 </a>
                 <div class="burger-ransom">
@@ -142,9 +142,9 @@
                 </div>
             </div>
 
-            <div class=categories>
+            <div class="burger__nav-item burger__contacts">
                 <a class="burger__nav-item-link" href="#">
-                    <div class="burger__nav-arrow"></div>
+                    <div class="burger__nav-arrow burger__contacts-arrow"></div>
                     <span class="burger__nav-name">Контакты</span>
                 </a>
                 <div class="burger-contacts">
@@ -172,7 +172,7 @@
 
             <div class="burger__nav-item burger__catalog">
                 <a class="burger__nav-item-link" href="#">
-                    <div class="burger__nav-arrow"></div>
+                    <div class="burger__nav-arrow burger__catalog-arrow"></div>
                     <span class="burger__nav-name">Каталог</span>
                 </a>
                 <div class="burger-catalog">
@@ -460,10 +460,14 @@
                         </a>
                     </div>
 
+                    <div class="list-application__title-wrap">
+                        <span class="list-application__title">Сферы применения</span>
+                    </div>
+
                     <div class="list-application__menu-item list-application__agriculture">
                         <a class="list-application__menu-item-link" href="#">
                             <div class="list-application__menu-img">
-                                <img src="./img/categories/categories-1.png" alt="icon-scope-of-application">
+                                <img src="./img/list-application/application-1.png" alt="icon-scope-of-application">
                             </div>
                             <span class="list-application__menu-name">Сельское хозяйство</span>
                         </a>
@@ -471,9 +475,57 @@
                     <div class="list-application__menu-item">
                         <a class="list-application__menu-item-link" href="#">
                             <div class="list-application__menu-img">
-                                <img src="./img/categories/categories-2.png" alt="icon-scope-of-application">
+                                <img src="./img/list-application/application-2.png" alt="icon-scope-of-application">
                             </div>
                             <span class="list-application__menu-name">Индустриальная тара</span>
+                        </a>
+                    </div>
+                    <div class="list-application__menu-item">
+                        <a class="list-application__menu-item-link" href="#">
+                            <div class="list-application__menu-img">
+                                <img src="./img/list-application/application-3.png" alt="icon-scope-of-application">
+                            </div>
+                            <span class="list-application__menu-name">Утилизация отходов</span>
+                        </a>
+                    </div>
+                    <div class="list-application__menu-item">
+                        <a class="list-application__menu-item-link" href="#">
+                            <div class="list-application__menu-img">
+                                <img src="./img/list-application/application-4.png" alt="icon-scope-of-application">
+                            </div>
+                            <span class="list-application__menu-name">Рыбная пром.</span>
+                        </a>
+                    </div>
+                    <div class="list-application__menu-item">
+                        <a class="list-application__menu-item-link" href="#">
+                            <div class="list-application__menu-img">
+                                <img src="./img/list-application/application-5.png" alt="icon-scope-of-application">
+                            </div>
+                            <span class="list-application__menu-name">Логистика</span>
+                        </a>
+                    </div>
+                    <div class="list-application__menu-item">
+                        <a class="list-application__menu-item-link" href="#">
+                            <div class="list-application__menu-img">
+                                <img src="./img/list-application/application-6.png" alt="icon-scope-of-application">
+                            </div>
+                            <span class="list-application__menu-name">Мясо-молочное пром.</span>
+                        </a>
+                    </div>
+                    <div class="list-application__menu-item">
+                        <a class="list-application__menu-item-link" href="#">
+                            <div class="list-application__menu-img">
+                                <img src="./img/list-application/application-7.png" alt="icon-scope-of-application">
+                            </div>
+                            <span class="list-application__menu-name">Сыроделие</span>
+                        </a>
+                    </div>
+                    <div class="list-application__menu-item">
+                        <a class="list-application__menu-item-link" href="#">
+                            <div class="list-application__menu-img">
+                                <img src="./img/list-application/application-8.png" alt="icon-scope-of-application">
+                            </div>
+                            <span class="list-application__menu-name">Аренда</span>
                         </a>
                     </div>
                 </div>
@@ -485,24 +537,67 @@
                     <div class="list-agriculture__nav-item">
                         <a class="list-agriculture__nav-item-link" href="#">
                             <div class="list-agriculture__nav-arrow"></div>
-                            <span class="list-agriculture__nav-name">Категории</span>
+                            <span class="list-agriculture__nav-name">Сферы применения</span>
                         </a>
+                    </div>
+
+                    <div class="list-application__title-wrap">
+                        <span class="list-application__title">Сельское хозяйство</span>
                     </div>
 
                     <div class="list-agriculture__menu-item">
                         <a class="list-agriculture__menu-item-link" href="#">
-                            <div class="list-agriculture__menu-img">
-                                <img src="./img/categories/categories-1.png" alt="icon-scope-of-application">
-                            </div>
-                            <span class="list-agriculture__menu-name">Сельское хозяйство</span>
+                            <span class="list-agriculture__menu-name">Контейнеры для мусора</span>
                         </a>
                     </div>
                     <div class="list-agriculture__menu-item">
                         <a class="list-agriculture__menu-item-link" href="#">
-                            <div class="list-agriculture__menu-img">
-                                <img src="./img/categories/categories-2.png" alt="icon-scope-of-application">
-                            </div>
-                            <span class="list-agriculture__menu-name">Индустриальная тара</span>
+                            <span class="list-agriculture__menu-name">Поддоны</span>
+                        </a>
+                    </div>
+                    <div class="list-agriculture__menu-item">
+                        <a class="list-agriculture__menu-item-link" href="#">
+                            <span class="list-agriculture__menu-name">Палеты</span>
+                        </a>
+                    </div>
+                    <div class="list-agriculture__menu-item">
+                        <a class="list-agriculture__menu-item-link" href="#">
+                            <span class="list-agriculture__menu-name">Большие контейнеры</span>
+                        </a>
+                    </div>
+                    <div class="list-agriculture__menu-item">
+                        <a class="list-agriculture__menu-item-link" href="#">
+                            <span class="list-agriculture__menu-name">Ящики</span>
+                        </a>
+                    </div>
+                    <div class="list-agriculture__menu-item">
+                        <a class="list-agriculture__menu-item-link" href="#">
+                            <span class="list-agriculture__menu-name">Контейнера ТКО</span>
+                        </a>
+                    </div>
+                    <div class="list-agriculture__menu-item">
+                        <a class="list-agriculture__menu-item-link" href="#">
+                            <span class="list-agriculture__menu-name">Крупногабаритные контейнера</span>
+                        </a>
+                    </div>
+                    <div class="list-agriculture__menu-item">
+                        <a class="list-agriculture__menu-item-link" href="#">
+                            <span class="list-agriculture__menu-name">Вкладываемые контейнера</span>
+                        </a>
+                    </div>
+                    <div class="list-agriculture__menu-item">
+                        <a class="list-agriculture__menu-item-link" href="#">
+                            <span class="list-agriculture__menu-name">Складывающиеся контейнера</span>
+                        </a>
+                    </div>
+                    <div class="list-agriculture__menu-item">
+                        <a class="list-agriculture__menu-item-link" href="#">
+                            <span class="list-agriculture__menu-name">Полочные контейнера</span>
+                        </a>
+                    </div>
+                    <div class="list-agriculture__menu-item">
+                        <a class="list-agriculture__menu-item-link" href="#">
+                            <span class="list-agriculture__menu-name">Тара в антистатическом исполнении</span>
                         </a>
                     </div>
                 </div>
@@ -902,7 +997,7 @@
                         <a href="#" class="footer__email-text">pochta@mail.ru</a>
                         <a href="#" class="footer__request-call">
                             <span class="footer__request-call-text">Заказать звонок</span>
-                            <img src="./img/icons/icon-request.svg" alt="icon-request">
+                            <img src="./img/icons/icon-phone.svg" alt="icon-email">
                         </a>
 
                     </div>
