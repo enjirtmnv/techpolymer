@@ -149,8 +149,9 @@
       object-fit: contain;
       margin: 0 0 0.3rem 0.6rem;
       @media (max-width: 48em) {
-        width: 5.2rem;
-        height: 5.2rem;
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0 0 1rem;
       }
     }
 

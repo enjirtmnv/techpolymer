@@ -2532,8 +2532,9 @@ main .main-product {
 }
 @media (max-width: 48em) {
   .footer__request-call img {
-    width: 5.2rem;
-    height: 5.2rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0 0 1rem;
   }
 }
 .footer__request-call-text {
