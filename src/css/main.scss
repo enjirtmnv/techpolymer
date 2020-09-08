@@ -16,6 +16,7 @@ body{
   overflow: hidden;
 }
 
+//npm install --save-dev postcss-loader
 .container {
   @media (max-width: 48em) {
     width: calc(100% - 10rem);
@@ -31,6 +32,7 @@ header {
 @import "fragments/list-all-categories";
 @import "fragments/list-application";
 @import "fragments/list-agriculture";
+@import "fragments/list-desk-application";
 
 main {
   overflow-x: hidden;
@@ -50,11 +52,10 @@ main {
 @import "fragments/our-advantages";
 @import "fragments/about-company";
 @import "fragments/albom";
-
 @import "fragments/footer";
 
-// card-product.html
 
+// card-product.html
 @import "fragments/breadcrumbs";
 
 

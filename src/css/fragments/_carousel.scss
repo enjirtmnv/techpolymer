@@ -171,9 +171,11 @@
     display: inline-flex;
     flex-direction: column;
     width: 6.6rem;
-    bottom: 37.2rem;
+    //bottom: 37.2rem;
+    top: 11.2rem;
     left: 23.5rem;
     @media (max-width: 48em) {
+      top: auto;
       left: 5rem;
       width: 8.8rem;
       bottom: 32rem;

@@ -1,13 +1,14 @@
 .header-categories {
   background-color: #FFFFFF;
   position: relative;
-  z-index: 2;
+  //z-index: 2;
   width: 100%;
   @media (max-width: 48em) {
     box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
   }
 
   .categories {
+    //z-index: 3;
 
     &__wrapper {
       display: block;
@@ -19,7 +20,6 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 1.6rem 0;
       top: 100%;
       @media (max-width: 48em) {
         flex-wrap: wrap;
@@ -28,22 +28,82 @@
     }
 
     &__item {
+      padding: 1.6rem 0;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 300ms ease;
+
+      &:nth-child(1) {
+        width: 16.5rem;
+      }
+
+      &:nth-child(2) {
+        width: 20rem;
+      }
+
+      &:nth-child(3) {
+        width: 16.7rem;
+      }
+
+      &:nth-child(4) {
+        width: 18rem;
+      }
+
+      &:nth-child(5) {
+        width: 9.6rem;
+      }
+
+      &:nth-child(6) {
+        width: 14.9rem;
+      }
+
+      &:nth-child(7) {
+        width: 11.5rem;
+      }
+
+      &:hover {
+        border-bottom: 2px solid #BDDB3C;
+        @media (max-width: 48em) {
+          border-bottom: 1px solid #F3F7FB;
+        }
+      }
+
+      &:hover .categories__name {
+        font-family: 'Circe-Bold', serif;
+        font-weight: 700;
+        @media (max-width: 48em) {
+          font-family: "Circe-Regular", serif;
+          font-weight: 400;
+        }
+      }
+
       &:last-child {
         display: none;
       }
 
       @media (max-width: 48em) {
-        width: 50%;
         border-bottom: 1px solid #F3F7FB;
+        &:nth-child(1) {
+          width: 50%;
+        }
+        &:nth-child(2) {
+          width: 50%;
+        }
         &:nth-child(3) {
           display: none;
         }
         &:nth-child(4) {
           display: none;
         }
+        &:nth-child(5) {
+          width: 50%;
+        }
+        &:nth-child(6) {
+          width: 50%;
+        }
         &:nth-child(7) {
           display: none;
         }
+
         &:last-child {
           display: block;
           border-bottom: none;
@@ -58,13 +118,6 @@
       justify-content: center;
       align-items: center;
 
-      &:hover .categories__name {
-        color: #909cb2;
-        transition: color 300ms ease;
-        @media (max-width: 48em) {
-          color: #202020;
-        }
-      }
 
       @media (max-width: 48em) {
         justify-content: flex-start;
@@ -126,6 +179,11 @@
       }
     }
   }
+}
+
+.categories {
+  z-index: 3;
+  position: relative;
 }
 
 

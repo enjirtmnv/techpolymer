@@ -200,7 +200,7 @@ input[type=number] {
   background-color: #FFFFFF;
   border-bottom: 0.1rem solid #DEDCE4;
   position: relative;
-  z-index: 4;
+  z-index: 5;
 }
 .header-nav .nav {
   max-width: 100%;
@@ -398,7 +398,6 @@ input[type=number] {
 .header-categories {
   background-color: #FFFFFF;
   position: relative;
-  z-index: 2;
   width: 100%;
 }
 @media (max-width: 48em) {
@@ -415,7 +414,6 @@ input[type=number] {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1.6rem 0;
   top: 100%;
 }
 @media (max-width: 48em) {
@@ -424,19 +422,74 @@ input[type=number] {
     padding: 0;
   }
 }
+.header-categories .categories__item {
+  padding: 1.6rem 0;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 300ms ease;
+}
+.header-categories .categories__item:nth-child(1) {
+  width: 16.5rem;
+}
+.header-categories .categories__item:nth-child(2) {
+  width: 20rem;
+}
+.header-categories .categories__item:nth-child(3) {
+  width: 16.7rem;
+}
+.header-categories .categories__item:nth-child(4) {
+  width: 18rem;
+}
+.header-categories .categories__item:nth-child(5) {
+  width: 9.6rem;
+}
+.header-categories .categories__item:nth-child(6) {
+  width: 14.9rem;
+}
+.header-categories .categories__item:nth-child(7) {
+  width: 11.5rem;
+}
+.header-categories .categories__item:hover {
+  border-bottom: 2px solid #BDDB3C;
+}
+@media (max-width: 48em) {
+  .header-categories .categories__item:hover {
+    border-bottom: 1px solid #F3F7FB;
+  }
+}
+.header-categories .categories__item:hover .categories__name {
+  font-family: "Circe-Bold", serif;
+  font-weight: 700;
+}
+@media (max-width: 48em) {
+  .header-categories .categories__item:hover .categories__name {
+    font-family: "Circe-Regular", serif;
+    font-weight: 400;
+  }
+}
 .header-categories .categories__item:last-child {
   display: none;
 }
 @media (max-width: 48em) {
   .header-categories .categories__item {
-    width: 50%;
     border-bottom: 1px solid #F3F7FB;
+  }
+  .header-categories .categories__item:nth-child(1) {
+    width: 50%;
+  }
+  .header-categories .categories__item:nth-child(2) {
+    width: 50%;
   }
   .header-categories .categories__item:nth-child(3) {
     display: none;
   }
   .header-categories .categories__item:nth-child(4) {
     display: none;
+  }
+  .header-categories .categories__item:nth-child(5) {
+    width: 50%;
+  }
+  .header-categories .categories__item:nth-child(6) {
+    width: 50%;
   }
   .header-categories .categories__item:nth-child(7) {
     display: none;
@@ -452,15 +505,6 @@ input[type=number] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.header-categories .categories__item-link:hover .categories__name {
-  color: #909cb2;
-  transition: color 300ms ease;
-}
-@media (max-width: 48em) {
-  .header-categories .categories__item-link:hover .categories__name {
-    color: #202020;
-  }
 }
 @media (max-width: 48em) {
   .header-categories .categories__item-link {
@@ -522,6 +566,11 @@ input[type=number] {
   }
 }
 
+.categories {
+  z-index: 3;
+  position: relative;
+}
+
 .burger {
   position: fixed;
   background-color: #ffffff;
@@ -533,7 +582,7 @@ input[type=number] {
   overflow-y: auto;
   transform: translateX(-100%);
   transition: transform 800ms cubic-bezier(0.19, 1, 0.22, 1);
-  z-index: 3;
+  z-index: 4;
 }
 .burger__inner {
   padding: 14.2rem 5rem 2.2rem 5rem;
@@ -1043,6 +1092,57 @@ input[type=number] {
   }
 }
 
+.list-desk-application {
+  position: absolute;
+  font-size: 5rem;
+  background-color: hotpink;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  height: 0;
+  top: 100%;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 2;
+}
+.list-desk-application__title-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.list-desk-application__img img {
+  object-fit: contain;
+  width: 12rem;
+  height: 12rem;
+}
+.list-desk-application__title-name {
+  font-family: "Circe-Regular", serif;
+  font-weight: 400;
+  color: #202020;
+  font-style: normal;
+  display: block;
+  font-size: 4rem;
+  line-height: 1.12;
+  padding: 0 0 0 3.5rem;
+  width: 53rem;
+}
+.list-desk-application__list li {
+  font-family: "Circe-Regular", serif;
+  font-weight: 400;
+  color: #202020;
+  font-style: normal;
+  display: block;
+  font-size: 3.2rem;
+  line-height: 1.52;
+  width: 53rem;
+}
+
+.show-list-desk-application {
+  opacity: 1;
+  height: 100%;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 main {
   overflow-x: hidden;
 }
@@ -1234,11 +1334,12 @@ main .main-product {
   display: inline-flex;
   flex-direction: column;
   width: 6.6rem;
-  bottom: 37.2rem;
+  top: 11.2rem;
   left: 23.5rem;
 }
 @media (max-width: 48em) {
   .carousel__swiper-pagination {
+    top: auto;
     left: 5rem;
     width: 8.8rem;
     bottom: 32rem;

@@ -1,0 +1,63 @@
+.list-desk-application{
+  position: absolute;
+  font-size: 5rem;
+  background-color: hotpink;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  height: 0;
+  top: 100%;
+  transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+  z-index: 2;
+
+  &__menu-title-wrap {
+
+  }
+
+  &__title-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  &__img {
+    img{
+      object-fit: contain;
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+
+  &__title-name {
+    font-family: "Circe-Regular", serif;
+    font-weight: 400;
+    color: #202020;
+    font-style: normal;
+    display: block;
+    font-size: 4rem;
+    line-height: 1.12;
+    padding: 0 0 0 3.5rem;
+    width: 53rem;
+  }
+
+  &__list{
+
+    li{
+      font-family: "Circe-Regular", serif;
+      font-weight: 400;
+      color: #202020;
+      font-style: normal;
+      display: block;
+      font-size: 3.2rem;
+      line-height: 1.52;
+      width: 53rem;
+    }
+  }
+}
+
+.show-list-desk-application {
+  opacity: 1;
+  height: 100%;
+  transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+}
