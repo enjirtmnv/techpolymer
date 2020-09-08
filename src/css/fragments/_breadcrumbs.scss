@@ -1,0 +1,44 @@
+.breadcrumbs{
+  &__list{
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item{
+    list-style: none;
+    display: inline-block;
+    margin: 0 1.6rem 0 0;
+    position: relative;
+    span{
+      font-family: 'Circe-Regular', serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.6rem;
+      line-height: 2.19;
+      color: #CDCFDC;
+    }
+    &:after{
+      content: '/';
+      position: absolute;
+      font-size: 1.6rem;
+      line-height: 2.19;
+      color: #CDCFDC;
+      top: 0;
+      right: -1.2rem;
+    }
+    &:last-child:after {
+      content: '';
+    }
+  }
+
+  &__item-active{
+    span{
+      font-family: 'Circe-Bold', serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.6rem;
+      line-height: 2.19;
+      color: #CDCFDC;
+    }
+  }
+}

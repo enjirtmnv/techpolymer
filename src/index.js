@@ -1,4 +1,6 @@
-import './css/style.scss'
+import './css/main.scss'
+
+import './js/preload.js'
 
 import './js/swiper-carousel-product.js'
 import './js/swiper-carousel.js'

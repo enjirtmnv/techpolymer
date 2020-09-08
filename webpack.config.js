@@ -4,25 +4,28 @@ const HtmlWepackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        cardProduct: './src/pages/card-product.js'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: "bundle.js"
+        filename: '[name].js',
     },
     mode: "development",
     plugins: [
-        // new webpack.ProvidePlugin({
-        //     $: 'jquery',
-        //     jQuery: 'jquery'
-        // }),
         new HtmlWepackPlugin({
             template: "./src/index.html",
-            filename: "./index.html"
+            filename: "./index.html",
+            inject: true,
+            chunks: ['index'],
         }),
-        // new HtmlWepackPlugin({
-        //     template: "./src/html/index.html",
-        //     filename: "./card-product.html"
-        // }),
+        new HtmlWepackPlugin({
+            template: "./src/pages/card-product.html",
+            filename: "./card-product.html",
+            inject: true,
+            chunks: ['index'],
+        }),
         new CleanWebpackPlugin(),
     ],
     module: {

@@ -1,7 +1,15 @@
+// index.html
 @import "./fragments/set";
 @import "./libs/fonts.css";
 
-body {
+body{
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 .lock{
@@ -15,7 +23,6 @@ body {
 }
 
 header {
-  //overflow-x: hidden;
 }
 
 @import "fragments/header-nav";
@@ -45,3 +52,9 @@ main {
 @import "fragments/albom";
 
 @import "fragments/footer";
+
+// card-product.html
+
+@import "fragments/breadcrumbs";
+
+
