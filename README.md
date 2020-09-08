@@ -1,2 +1,2 @@
 # techpolymer
-Проверить работу можно здесь https://enjirtmnv.github.io/techpolymer-eco/dist
+Проверить работу можно здесь https://enjirtmnv.github.io/texpolymer-eco/dist
