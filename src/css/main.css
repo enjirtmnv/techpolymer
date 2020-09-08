@@ -1143,9 +1143,6 @@ input[type=number] {
   transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-main {
-  overflow-x: hidden;
-}
 main .main-product {
   background: linear-gradient(176.11deg, #DEDCE4 24.83%, #A5B1C7 69.6%);
   padding: 0 0 15.1rem 0;
