@@ -2370,6 +2370,7 @@ main .main-product {
 
 .albom {
   width: 100%;
+  overflow: hidden;
 }
 .albom__wrap {
   padding: 7.7rem 0 2.4rem 0;
