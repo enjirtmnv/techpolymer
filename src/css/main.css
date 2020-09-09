@@ -1103,6 +1103,7 @@ input[type=number] {
   height: auto;
   z-index: 2;
   display: none;
+  box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
   top: 15.3rem;
 }
 @media (max-width: 48em) {
@@ -1174,6 +1175,10 @@ input[type=number] {
 .list-desk-application__list li:first-child a {
   line-height: 1;
   padding: 0 0 1.15rem 0;
+}
+
+.hidden-opa {
+  display: none;
 }
 
 main .main-product {
