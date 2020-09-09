@@ -1,12 +1,9 @@
 .header-categories {
   background-color: #FFFFFF;
   position: relative;
-  //z-index: 2;
   width: 100%;
 
-
   .categories {
-    //z-index: 3;
     @media (max-width: 48em) {
       box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
     }
@@ -179,6 +176,10 @@
         width: 16.8rem;
       }
     }
+  }
+
+  .add-categories-box-shadow{
+    box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
   }
 }
 

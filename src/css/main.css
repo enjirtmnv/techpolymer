@@ -565,6 +565,9 @@ input[type=number] {
     width: 16.8rem;
   }
 }
+.header-categories .add-categories-box-shadow {
+  box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
+}
 
 .categories {
   z-index: 3;
@@ -1094,8 +1097,7 @@ input[type=number] {
 
 .list-desk-application {
   position: absolute;
-  font-size: 5rem;
-  background-color: hotpink;
+  background-color: #ffffff;
   left: 0;
   width: 100%;
   opacity: 0;
@@ -1103,6 +1105,25 @@ input[type=number] {
   top: 100%;
   transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 2;
+  box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
+}
+@media (max-width: 48em) {
+  .list-desk-application {
+    display: none;
+  }
+}
+.list-desk-application__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3.4rem 0 3.4rem 0;
+}
+.list-desk-application__column {
+  display: flex;
+  flex-direction: column;
+}
+.list-desk-application__item {
+  padding: 2rem 0 0 0;
 }
 .list-desk-application__title-link {
   display: flex;
@@ -1110,36 +1131,56 @@ input[type=number] {
   justify-content: flex-start;
   flex-direction: row;
 }
+.list-desk-application__title-link:hover span {
+  color: #9FACC4;
+  transition: color 300ms ease;
+}
+.list-desk-application__img {
+  border-radius: 50%;
+}
 .list-desk-application__img img {
-  object-fit: contain;
-  width: 12rem;
-  height: 12rem;
+  object-fit: cover;
+  width: 5.3rem;
+  height: 5.3rem;
 }
 .list-desk-application__title-name {
-  font-family: "Circe-Regular", serif;
-  font-weight: 400;
-  color: #202020;
+  font-family: "Circe-Bold", serif;
+  font-weight: 700;
   font-style: normal;
+  color: #202020;
   display: block;
-  font-size: 4rem;
-  line-height: 1.12;
-  padding: 0 0 0 3.5rem;
-  width: 53rem;
+  font-size: 1.8rem;
+  line-height: 1.39;
+  padding: 0 0 0 1.4rem;
+  transition: color 300ms ease;
 }
-.list-desk-application__list li {
-  font-family: "Circe-Regular", serif;
-  font-weight: 400;
-  color: #202020;
+.list-desk-application__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 8.8rem;
+}
+.list-desk-application__list li a {
+  font-family: "Circe-Light", serif;
+  font-weight: 300;
   font-style: normal;
+  color: #202020;
   display: block;
-  font-size: 3.2rem;
-  line-height: 1.52;
-  width: 53rem;
+  font-size: 1.8rem;
+  line-height: 2.3;
+  transition: color 300ms ease;
+}
+.list-desk-application__list li a:hover {
+  color: #9FACC4;
+  transition: color 300ms ease;
+}
+.list-desk-application__list li:first-child a {
+  line-height: 1;
+  padding: 0 0 1.15rem 0;
 }
 
 .show-list-desk-application {
   opacity: 1;
-  height: 100%;
+  height: auto;
   transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
