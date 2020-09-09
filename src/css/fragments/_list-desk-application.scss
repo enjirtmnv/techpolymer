@@ -3,12 +3,21 @@
   background-color: #ffffff;
   left: 0;
   width: 100%;
-  opacity: 0;
-  height: 0;
-  top: 100%;
-  transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+  //opacity: 0;
+  height: auto;
+  //top: 100%;
+  //transition: all 500ms cubic-bezier(.19, 1, .22, 1);
   z-index: 2;
-  box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
+  display: none;
+  //transform: translateY(-100%);
+  //box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
+
+  top: 15.3rem;
+  //padding: 15.3rem 0 0 0;
+
+
+
+
   @media (max-width: 48em) {
     display: none;
   }
@@ -93,8 +102,13 @@
   }
 }
 
-.show-list-desk-application {
-  opacity: 1;
-  height: auto;
-  transition: all 500ms cubic-bezier(.19, 1, .22, 1);
-}
+//.hidden-list-desk-application {
+//  display: none;
+//}
+
+//.show-list-desk-application {
+//  opacity: 1;
+//  transform: translateY(0%);
+//  height: auto;
+//  transition: all 500ms cubic-bezier(.19, 1, .22, 1);
+//}
