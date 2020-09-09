@@ -1108,7 +1108,7 @@ input[type=number] {
 }
 @media (max-width: 48em) {
   .list-desk-application {
-    display: none;
+    display: none !important;
   }
 }
 .list-desk-application__inner {

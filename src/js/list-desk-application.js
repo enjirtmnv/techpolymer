@@ -1,7 +1,15 @@
 import $ from 'jquery';
 
 $(document).ready(function () {
+    // if (window.matchMedia('(max-width: 768px)').matches){
+    //     $('.list-desk-application').slideUp(1);
+    //     setTimeout(function () {
+    //         $('.categories').removeClass('add-categories-box-shadow');
+    //     }, 1);
+    // }
 
+
+    // ($('.mixplat__relative').width() > 300) ? $('.mixplat__operators').hide() : $('.mixplat__operators').show()
     $('.categories__list-desk-application').click(function (event) {
         if (window.matchMedia('(min-width: 768px)').matches) {
             $('.list-desk-application').slideToggle(400);

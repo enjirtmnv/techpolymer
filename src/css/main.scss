@@ -16,7 +16,6 @@ body{
   overflow: hidden;
 }
 
-//npm install --save-dev postcss-loader
 .container {
   @media (max-width: 48em) {
     width: calc(100% - 10rem);
