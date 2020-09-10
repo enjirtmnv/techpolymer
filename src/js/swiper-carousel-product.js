@@ -2,7 +2,7 @@ import 'swiper/swiper-bundle.css';
 import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 Swiper.use([Navigation, Pagination, Autoplay]);
 
-let SwiperProductCarousel = new Swiper('.product-carousel__swiper-container', {
+let SwiperCarouselProduct = new Swiper('.product-carousel__swiper-container', {
     slidesPerView: 2,
     slideClass: 'product-carousel__swiper-slide',
     wrapperClass: 'product-carousel__swiper-wrapper',

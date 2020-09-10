@@ -1,0 +1,128 @@
+.card-product-carousel {
+
+  background-color: #ffffff;
+
+  //.product-carousel {
+  //  @media (max-width: 48em) {
+  //    .container {
+  //      width: 100%;
+  //    }
+  //  }
+
+  &__inner {
+    width: 158rem;
+    margin: 0 auto;
+    position: relative;
+    max-width: unset;
+  }
+
+  &__swiper-container {
+    width: 140rem;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding: 0 10rem 0 10rem;
+    @media (max-width: 48em) {
+      padding: 0 0 28.6rem 0;
+    }
+  }
+
+  &__swiper-wrapper {
+  }
+
+  &__swiper-slide {
+    font-size: 18px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  &__img {
+    display: flex;
+    justify-content: center;
+
+    img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+      @media (max-width: 48em) {
+
+      }
+    }
+  }
+
+
+
+
+  &__swiper-button-wrap{
+
+  }
+
+
+  &__swiper-button-prev::after,
+  &__swiper-button-next::after {
+    display: none;
+  }
+
+  &__swiper-button-prev,
+  &__swiper-button-next {
+    z-index: 10;
+    width: 6rem;
+    height: 6rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #F7F7FC;
+    background-size: 1.13rem;
+    outline: none;
+    position: absolute;
+    bottom: calc(50% - 3rem);
+    cursor: pointer;
+    transition: box-shadow 400ms ease;
+    @media (max-width: 48em) {
+      position: absolute;
+      width: 10rem;
+      height: 10rem;
+      background-size: 1.88rem;
+      background-position: center center;
+      top: 67rem;
+      background-color: #ffffff;
+      box-shadow: 1.5rem 1.5rem 6rem #A7B1C4;
+      &:hover {
+        box-shadow: 1.5rem 1.5rem 6rem #A7B1C4;
+      }
+    }
+  }
+
+  &__swiper-button-prev {
+    background-image: url("../img/icons/left-arrow.svg");
+    left: 6.4rem;
+    box-shadow: 1.5rem 1.5rem 6rem #A7B1C4;
+    &:hover {
+      box-shadow: 1.5rem 1.5rem 6rem 1rem #A7B1C4;
+      transition: box-shadow 400ms ease;
+    }
+
+    @media (max-width: 48em) {
+      left: 62%;
+    }
+  }
+
+  &__swiper-button-next {
+    background-image: url("../img/icons/right-arrow.svg");
+    right: 6.4rem;
+    box-shadow: -1.5rem 1.5rem 6rem #A7B1C4;
+
+    &:hover {
+      box-shadow: -1.5rem 1.5rem 6rem 1rem #A7B1C4;
+      transition: box-shadow 400ms ease;
+    }
+
+    @media (max-width: 48em) {
+      right: 7%;
+    }
+  }
+}

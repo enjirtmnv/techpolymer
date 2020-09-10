@@ -5,7 +5,7 @@
 
   .categories {
     @media (max-width: 48em) {
-      box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
+      box-shadow: 2.5rem 3rem 6rem rgba(179, 187, 204, 0.45);
     }
 
     &__wrapper {
@@ -27,7 +27,7 @@
 
     &__item {
       padding: 1.6rem 0;
-      border-bottom: 2px solid transparent;
+      border-bottom: 0.2rem solid transparent;
       transition: border-bottom 300ms ease;
 
       &:nth-child(1) {
@@ -59,9 +59,9 @@
       }
 
       &:hover {
-        border-bottom: 2px solid #BDDB3C;
+        border-bottom: 0.2rem solid #BDDB3C;
         @media (max-width: 48em) {
-          border-bottom: 1px solid #F3F7FB;
+          border-bottom: 0.1rem solid #F3F7FB;
         }
       }
 
@@ -79,7 +79,7 @@
       }
 
       @media (max-width: 48em) {
-        border-bottom: 1px solid #F3F7FB;
+        border-bottom: 0.1rem solid #F3F7FB;
         &:nth-child(1) {
           width: 50%;
         }
@@ -179,7 +179,7 @@
   }
 
   .add-categories-box-shadow{
-    box-shadow: 25px 30px 60px rgba(179, 187, 204, 0.45);
+    box-shadow: 2.5rem 3rem 6rem rgba(179, 187, 204, 0.45);
   }
 }
 

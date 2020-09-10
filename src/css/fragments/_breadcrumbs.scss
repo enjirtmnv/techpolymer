@@ -1,7 +1,9 @@
 .breadcrumbs{
+  background-color: #ffffff;
   &__list{
     display: flex;
     flex-direction: row;
+    padding: 5.5rem 0 0 0;
   }
 
   &__item{

@@ -11,9 +11,4 @@ import './js/list-application'
 import './js/list-agricultures'
 import './js/list-desk-application'
 
-if (window.matchMedia('(max-width: 768px)').matches){
-    $('.list-desk-application').css('display', 'none');
-    // setTimeout(function () {
-    //     $('.categories').removeClass('add-categories-box-shadow');
-    // }, 1);
-}
+import './js/swiper-card-product'

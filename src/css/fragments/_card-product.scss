@@ -1,0 +1,236 @@
+$colors: (
+        grey: #B3B3B3,
+        green: #097000,
+        blue: #182DAB
+);
+
+$borderColors: (
+        grey: #d4d4d4,
+        green: #9db38f,
+        blue: #97A4BA
+);
+
+.card-product{
+  background-color: #ffffff;
+  padding: 0 0 6.3rem 0;
+  &__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid #EBEEF2;
+  }
+
+  &__text-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    padding: 0 0 6.2rem 0;
+  }
+
+  &__text-size {
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 3.33;
+    color: #9FACC4;
+    font-family: "Circe-Bold", serif;
+    font-weight: 700;
+    @media (max-width: 48em) {
+      font-size: 2.8rem;
+      line-height: 2.14;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 1.25;
+    color: #202020;
+    font-family: "Circe-Bold", serif;
+    font-weight: 700;
+    @media (max-width: 48em) {
+      font-size: 5rem;
+      line-height: 1.2;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: #202020;
+    font-family: "Circe-Regular", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 2rem 0 3rem 0;
+    @media (max-width: 48em) {
+      font-size: 2.8rem;
+      line-height: 2.14;
+      margin: 1.4rem 0 3.8rem 0;
+    }
+  }
+
+  &__button {
+    font-style: normal;
+    width: 24.2rem;
+    height: 6rem;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    background-color: #BDDB3C;
+    color: #ffffff;
+    font-family: "Circe-Bold", serif;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 400ms ease;
+    &:hover{
+      box-shadow: 1rem 0.5rem 3rem #d1d1df;
+      transition: box-shadow 400ms ease;
+    }
+    @media (max-width: 48em) {
+      width: 40.15rem;
+      height: 10rem;
+      line-height: 1.47;
+      font-size: 3rem;
+      &:hover{
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__img-wrap{
+    border-right: 0.1rem solid #EBEEF2;
+    padding: 0 7.5rem 6.2rem 4rem;
+    img{
+      object-fit: contain;
+      width: 48.4rem;
+      height: 100%;
+    }
+  }
+
+  &__info-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 36.7rem;
+    padding: 0 0 6.2rem 0;
+  }
+
+  &__info-title {
+    color: #202020;
+    font-size: 2rem;
+    line-height: 1.25;
+    font-family: "Circe-Bold", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 0 1.8rem 0;
+    @media (max-width: 48em) {
+      font-size: 3.2rem;
+      line-height: 1.25;
+      margin: 0 0 4rem 0;
+    }
+  }
+
+  &__info-par {
+    color: #202020;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.67;
+    font-family: "Circe-Light", serif;
+    font-weight: 300;
+    padding: 0 0 2rem 0;
+    border-bottom: 0.1rem solid #EBEEF2;
+    @media (max-width: 48em) {
+      font-size: 2.8rem;
+      line-height: 1.43;
+    }
+  }
+
+  &__radio-wrap{
+    display: flex;
+    flex-direction: row;
+    padding: 2.3rem 0 2.3rem 0;
+    align-items: center;
+    border-bottom: 0.1rem solid #EBEEF2;
+
+    input[type="radio"]{
+      display: none;
+      &:checked + label {
+        span { transform: scale(0.62); }
+        @each $name, $value in $borderColors {
+          .#{$name} {
+            //outline: 0.2rem solid lighten($value, 25%);
+            outline: 0.2rem solid $value;
+            outline-offset: 0.8rem;
+          }
+        }
+      }
+    }
+
+    label{
+      display: inline-block;
+      width: 2.1rem;
+      height: 2.1rem;
+      cursor: pointer;
+      margin: 0 1.05rem 0 1.05rem;
+      &:hover {
+        span {
+          transform: scale(0.62);
+        }
+      }
+      span {
+
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: transform .2s ease-in-out;
+        @each $name, $value in $colors {
+          &.#{$name} {
+            background: $value;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  &__radio-title{
+    color: #202020;
+    font-size: 2rem;
+    line-height: 1.45;
+    font-family: "Circe-Bold", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 1.05rem 0 0;
+    @media (max-width: 48em) {
+      font-size: 3.2rem;
+      line-height: 1.25;
+      margin: 0 0 4rem 0;
+    }
+  }
+
+  &__stock-wrap{
+    display: block;
+    padding: 2.3rem 0 2.3rem 0;
+    border-bottom: 0.1rem solid #EBEEF2;
+    img{
+      object-fit: contain;
+      width: 1.8rem;
+      height: 100%;
+    }
+  }
+
+  &__stock-text{
+    color: #202020;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.67;
+    font-family: "Circe-Light", serif;
+    font-weight: 300;
+    margin: 0 0 0 0.8rem;
+    @media (max-width: 48em) {
+      font-size: 2.8rem;
+      line-height: 1.43;
+    }
+  }
+}
