@@ -2,7 +2,9 @@
   background-color: #ffffff;
 
   .product-carousel {
+    padding: 0 0 13.3rem 0;
     @media (max-width: 48em) {
+      padding: 0;
       .container {
         width: 100%;
       }

@@ -1,0 +1,67 @@
+.card-product-advantages {
+  background-color: #ffffff;
+  &__title{
+    font-family: 'Circe-Bold', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 1.25;
+    color: #202020;
+    padding: 7.2rem 0 8.2rem 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #EBEEF2;
+    padding: 0 0 13rem 0;
+    li:nth-child(1){
+      margin: 0 0 9.1rem 0;
+    }
+    li:nth-child(2){
+      margin: 0 0 9.1rem 0;
+    }
+    li:nth-child(3){
+      margin: 0 0 9.1rem 0;
+    }
+  }
+
+  &__item {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: row;
+    img {
+      object-fit: contain;
+      width: 8.5rem;
+      height: 100%;
+    }
+  }
+
+  &__text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 0 2.5rem;
+  }
+
+  &__text-title {
+    font-family: 'Circe-Bold', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 1.48;
+    color: #202020;
+    margin: 0 0 1.1rem 0;
+    display: block;
+  }
+
+  &__par {
+    font-family: 'Circe-Regular', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 1.48;
+    color: #202020;
+    width: 34.7rem;
+  }
+}

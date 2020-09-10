@@ -1,0 +1,81 @@
+.similar-products {
+  background-color: #ffffff;
+  .similar-products-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13.4rem 0 0 0;
+    @media (max-width: 48em) {
+      padding: 9.6rem 0 0 0;
+    }
+
+    &__text-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      @media (max-width: 48em) {
+        position: relative;
+      }
+    }
+
+    &__info {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.6rem;
+      line-height: 3.12;
+      color: #9FACC4;
+      @media (max-width: 48em) {
+        font-size: 2.8rem;
+        line-height: 1.5;
+      }
+    }
+
+    &__title {
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 4rem;
+      line-height: 1.25;
+      color: #202020;
+      @media (max-width: 48em) {
+        font-size: 5rem;
+        line-height: 1.48;
+      }
+    }
+
+    &__button {
+      width: 23.7rem;
+      height: 6rem;
+      background-color: #BDDB3C;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Circe-Bold", serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      color: #FFFFFF;
+      &:hover{
+        box-shadow: 1rem 0 2.2rem #d1d1df;
+        transition: box-shadow 400ms ease;
+      }
+      @media (max-width: 48em) {
+        position: absolute;
+        width: 36.6rem;
+        height: 10rem;
+        font-size: 3rem;
+        line-height: 1.47;
+        top: 88.2rem;
+        z-index: 2;
+        &:hover{
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

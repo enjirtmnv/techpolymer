@@ -1,27 +1,112 @@
-.card-product-info{
+.card-product-info {
   background-color: #ffffff;
   padding: 10.4rem 0 0 0;
-  &__nav{
-    padding: 0 0 7.2rem 0;
+
+  &__nav {
+    border-bottom: 1px solid #EBEEF2;
+    padding: 0 0 8.6rem 0;
   }
 
-  &__nav-list{
+  &__nav-list {
     display: flex;
     flex-direction: row;
-    li{
+    border-bottom: 1px solid #EBEEF2;
+
+    li {
       font-family: 'Circe-Bold', serif;
       font-weight: 700;
       font-style: normal;
       font-size: 1.6rem;
       line-height: 2.19;
       color: #CDCFDC;
-      border-bottom: 0.2rem solid transparent;
-      transition:all 300ms ease;
-      &:hover{
-        border-bottom: 0.2rem solid #BDDB3C;
+      margin: 0 2.75rem 0 2.75rem;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 300ms ease;
+      cursor: pointer;
 
+      &:hover {
+        border-bottom: 2px solid #BDDB3C;
       }
 
+      &:first-child {
+        margin: 0 2.75rem 0 0;
+      }
+
+      &:last-child {
+        margin: 0 0 0 2.75rem;
+      }
+    }
+  }
+
+  &__info-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info-title {
+    font-family: 'Circe-Bold', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 1.25;
+    color: #202020;
+    margin: 5.2rem 0 2.9rem 0;
+  }
+
+  &__info-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+      width: calc(50%);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      &:nth-child(16) span:nth-child(3) {
+        position: absolute;
+        right: 0;
+        top: 1.6rem;
+      }
+
+      &:nth-child(16) span:nth-child(2) {
+        margin: 0 22.6rem 0 0;
+      }
+
+      span {
+        display: block;
+
+        &:nth-child(1) {
+          font-family: 'Circe-Regular', serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1.8rem;
+          line-height: 3.33;
+          color: #202020;
+        }
+
+        &:nth-child(2) {
+          height: 0.9rem;
+          flex-grow: 1;
+          display: block;
+          border-bottom: 1px dashed #9FACC4;
+          overflow: hidden;
+        }
+
+        &:nth-child(3) {
+          font-family: 'Circe-Bold', serif;
+          font-weight: 700;
+          font-style: normal;
+          font-size: 1.8rem;
+          line-height: 1.5;
+          color: #202020;
+          width: 22.6rem;
+        }
+      }
     }
   }
 }
