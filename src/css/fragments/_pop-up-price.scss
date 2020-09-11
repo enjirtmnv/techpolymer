@@ -1,0 +1,14 @@
+.pop-up-price{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  //padding-top: 5rem;
+  //padding-bottom: 5rem;
+  width: 100%;
+  min-height: 50rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(50% 50% at 50% 50%, #2B2B2B 0%, #272727 100%);
+}

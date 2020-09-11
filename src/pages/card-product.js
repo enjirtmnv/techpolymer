@@ -7,3 +7,5 @@ import '../js/list-all-categories'
 import '../js/list-application'
 import '../js/list-agricultures'
 import '../js/list-desk-application'
+
+import '../js/pop-up-price'
