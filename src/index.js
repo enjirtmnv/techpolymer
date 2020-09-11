@@ -12,3 +12,4 @@ import './js/list-agricultures'
 import './js/list-desk-application'
 
 import './js/swiper-card-product'
+import './js/card-product-info'

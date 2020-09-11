@@ -753,17 +753,6 @@
                         <input type="radio" name="color" id="blue"/>
                         <label for="blue"><span class="blue"></span></label>
 
-
-                        <!--                        <label for="card-product-grey"><span class="card-product-grey"></span></label>-->
-                        <!--                        <input type="radio" name="color" id="card-product-grey" value="red" />-->
-
-                        <!--                        <label for="card-product-green"><span class="card-product-green"></span></label>-->
-                        <!--                        <input type="radio" name="color" id="card-product-green" value="red" />-->
-
-                        <!--                        <label for="card-product-blue"><span class="card-product-blue"></span></label>-->
-                        <!--                        <input type="radio" name="color" id="card-product-blue" value="red" />-->
-
-
                     </div>
 
                     <div class="card-product__stock-wrap">
@@ -823,17 +812,17 @@
     <div class="card-product-info">
         <div class="container">
             <nav class="card-product-info__nav">
-                <ul class="card-product-info__nav-list">
-                    <li>Характеристики</li>
-                    <li>Преимущеста</li>
-                    <li>Дополнительная информация</li>
-                    <li>Отзывы</li>
-                    <li>Похожие товары</li>
+                <ul class="card-product-info__nav-list tabs">
+                    <li class="current" data-tab="tab-1">Характеристики</li>
+                    <li data-tab="tab-2">Преимущеста</li>
+                    <li data-tab="tab-3">Дополнительная информация</li>
+                    <li data-tab="tab-4">Отзывы</li>
+                    <li data-tab="tab-5">Похожие товары</li>
                 </ul>
 
-                <div class="card-product-info__info-wrap">
-                    <p class="card-product-info__info-title">Характеристики</p>
-                    <ul class="card-product-info__info-list">
+                <div class="characteristic-cp tab-content current" id="tab-1">
+                    <p class="characteristic-cp__title">Характеристики</p>
+                    <ul class="characteristic-cp__list">
                         <li><span>Длина, мм</span><span></span><span>1200</span></li>
                         <li><span>Температура</span><span></span><span>-30&#176; - +40&#176;С</span></li>
                         <li><span>Ширина, мм</span><span></span><span>1000</span></li>
@@ -852,7 +841,57 @@
                         <li><span>Опции</span><span></span><span>нанесение логотипа; индивидуальный цвет; UV&#160;-&#160;защита; морозостойкость</span>
                         </li>
                         <li><span>Сырье</span><span></span><span>HDPE</span></li>
+                    </ul>
+                </div>
 
+                <div class="advantage-cp tab-content" id="tab-2">
+                    <p class="advantage-cp__title">Преимущеста</p>
+                    <ul class="advantage-cp__list">
+                        <li><span>Складские системы</span></li>
+                        <li><span>Штабелирование</span></li>
+                        <li><span>Организация пространства</span></li>
+                        <li><span>УФ-защита</span></li>
+                        <li><span>Водонепроницаемость</span></li>
+                        <li><span>Габариты</span></li>
+                    </ul>
+                </div>
+
+                <div class="more-info-cp tab-content" id="tab-3">
+                    <p class="more-info-cp__title">Дополнительная информация</p>
+                    <ul class="more-info-cp__list">
+                        <li><span>Подходит для применения
+в автоматизированных складах</span></li>
+                        <li><span>Может штабелироваться в несколько ярусов</span></li>
+                        <li><span>Экономит до 75% пространства склада
+для хранения </span></li>
+                        <li><span>Защита вашей продукции
+от ультрафиолетовых лучей</span></li>
+                        <li><span>Вся наша продукция обладает водонепроницаемостью</span></li>
+                        <li><span>Размеры наших товаров разработаны
+для максимально удобного пользования</span></li>
+                    </ul>
+                </div>
+
+                <div class="reviews-cp tab-content" id="tab-4">
+                    <p class="reviews-cp__title">Отзывы</p>
+                    <ul class="reviews-cp__list">
+                        <li><span>Все супер!</span></li>
+                        <li><span>Буду заказывать еще :)</span></li>
+                        <li><span>Очень понравилось</span></li>
+                        <li><span>Качественно сделано</span></li>
+                        <li><span>Быстрая доствка</span></li>
+                        <li><span>Очень вежливо общались, спасибо!</span></li>
+                    </ul>
+                </div>
+
+                <div class="similar-cp tab-content" id="tab-5">
+                    <p class="similar-cp__title">Похожие товары</p>
+                    <ul class="similar-cp__list">
+
+                        <li><span>Товар 1</span></li>
+                        <li><span>Товар 2</span></li>
+                        <li><span>Товар 3</span></li>
+                        <li><span>Товар 4</span></li>
                     </ul>
                 </div>
 
