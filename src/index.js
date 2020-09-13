@@ -13,3 +13,4 @@ import './js/list-desk-application'
 
 import './js/swiper-card-product'
 import './js/card-product-info'
+import './js/pop-up-price'
