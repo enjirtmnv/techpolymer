@@ -15,7 +15,7 @@ let SwiperCarouselProduct = new Swiper('.product-carousel__swiper-container', {
         prevEl: '.product-carousel__swiper-button-prev',
     },
     breakpoints: {
-        768: {
+        769: {
             slidesPerView: 3,
         }
     },

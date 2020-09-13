@@ -12,13 +12,16 @@ $borderColors: (
 
 .card-product{
   background-color: #ffffff;
-  padding: 0 0 6.3rem 0;
   &__inner{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.1rem solid #EBEEF2;
+    @media (max-width: 48em) {
+      flex-direction: column;
+      border-bottom: 0.1rem solid transparent;
+    }
   }
 
   &__text-wrap{
@@ -26,6 +29,13 @@ $borderColors: (
     flex-direction: column;
     width: 40rem;
     padding: 0 0 6.2rem 0;
+    position: relative;
+    @media (max-width: 48em) {
+      width: calc(100% - 6rem);
+      height: 100%;
+      align-items: center;
+      padding: 0 0 5.4rem 0;
+    }
   }
 
   &__text-size {
@@ -37,7 +47,8 @@ $borderColors: (
     font-weight: 700;
     @media (max-width: 48em) {
       font-size: 2.8rem;
-      line-height: 2.14;
+      line-height: 1.5;
+      text-align: center;
     }
   }
 
@@ -51,6 +62,8 @@ $borderColors: (
     @media (max-width: 48em) {
       font-size: 5rem;
       line-height: 1.2;
+      text-align: center;
+      margin: 1.6rem 0 3.4rem 0;
     }
   }
 
@@ -64,8 +77,9 @@ $borderColors: (
     margin: 2rem 0 3rem 0;
     @media (max-width: 48em) {
       font-size: 2.8rem;
-      line-height: 2.14;
-      margin: 1.4rem 0 3.8rem 0;
+      line-height: 1.43;
+      margin: 0;
+      text-align: center;
     }
   }
 
@@ -88,10 +102,12 @@ $borderColors: (
       transition: box-shadow 400ms ease;
     }
     @media (max-width: 48em) {
+      position: absolute;
       width: 40.15rem;
       height: 10rem;
       line-height: 1.47;
       font-size: 3rem;
+      bottom: -69rem;
       &:hover{
         box-shadow: none;
       }
@@ -101,10 +117,25 @@ $borderColors: (
   &__img-wrap{
     border-right: 0.1rem solid #EBEEF2;
     padding: 0 7.5rem 6.2rem 4rem;
+    @media (max-width: 48em) {
+      flex-direction: column;
+      border-right: 0.1rem solid transparent;
+      border-bottom: 0.1rem solid #EBEEF2;
+      padding: 0 0 18.2rem 0;
+      width: 100%;
+      a{
+        display: flex;
+        justify-content: center;
+      }
+
+    }
     img{
       object-fit: contain;
       width: 48.4rem;
       height: 100%;
+      @media (max-width: 48em) {
+        width: 42.6rem;
+      }
     }
   }
 
@@ -113,6 +144,10 @@ $borderColors: (
     flex-direction: column;
     width: 36.7rem;
     padding: 0 0 6.2rem 0;
+    @media (max-width: 48em) {
+      width: 100%;
+      padding: 5.6rem 0 0 0;
+    }
   }
 
   &__info-title {
@@ -142,6 +177,7 @@ $borderColors: (
     @media (max-width: 48em) {
       font-size: 2.8rem;
       line-height: 1.43;
+      padding: 0 0 4.2rem 0;
     }
   }
 
@@ -151,11 +187,13 @@ $borderColors: (
     padding: 2.3rem 0 2.3rem 0;
     align-items: center;
     border-bottom: 0.1rem solid #EBEEF2;
-
+    @media (max-width: 48em) {
+      padding: 3.4rem 0 3.4rem 0;
+    }
     input[type="radio"]{
       display: none;
       &:checked + label {
-        span { transform: scale(0.62); }
+        span { transform: scale(0.67); }
         @each $name, $value in $borderColors {
           .#{$name} {
             //outline: 0.2rem solid lighten($value, 25%);
@@ -177,8 +215,17 @@ $borderColors: (
           transform: scale(0.62);
         }
       }
+      @media (max-width: 48em) {
+        width: 3.8rem;
+        height: 3.8rem;
+        margin: 0 1.9rem 0 1.9rem;
+        &:hover {
+          span {
+            transform: none;
+          }
+        }
+      }
       span {
-
         display: block;
         width: 100%;
         height: 100%;
@@ -190,8 +237,6 @@ $borderColors: (
         }
       }
     }
-
-
   }
 
   &__radio-title{
@@ -205,7 +250,7 @@ $borderColors: (
     @media (max-width: 48em) {
       font-size: 3.2rem;
       line-height: 1.25;
-      margin: 0 0 4rem 0;
+      margin: 0 1.9rem 0 0;
     }
   }
 
@@ -213,10 +258,16 @@ $borderColors: (
     display: block;
     padding: 2.3rem 0 2.3rem 0;
     border-bottom: 0.1rem solid #EBEEF2;
+    @media (max-width: 48em) {
+      padding: 3.4rem 0 3.4rem 0;
+    }
     img{
       object-fit: contain;
       width: 1.8rem;
       height: 100%;
+      @media (max-width: 48em) {
+        width: 3.2rem;
+      }
     }
   }
 
@@ -229,8 +280,9 @@ $borderColors: (
     font-weight: 300;
     margin: 0 0 0 0.8rem;
     @media (max-width: 48em) {
-      font-size: 2.8rem;
-      line-height: 1.43;
+      font-size: 2.4rem;
+      line-height: 1.5;
+      margin: 0 0 0 2.4rem;
     }
   }
 }

@@ -1,6 +1,10 @@
 .card-product-carousel {
 
   background-color: #ffffff;
+  padding: 6.3rem 0 10.4rem 0;
+  @media (max-width: 48em) {
+    padding: 13.6rem 0 27rem 0;
+  }
 
   //.product-carousel {
   //  @media (max-width: 48em) {
@@ -10,21 +14,28 @@
   //  }
 
   &__inner {
-    width: 158rem;
+    //width: 158rem;
+    width: 82.3%;
     margin: 0 auto;
     position: relative;
     max-width: unset;
+    @media (max-width: 48em) {
+      //width: calc(100% - 10rem);
+      width: 100%;
+    }
   }
 
   &__swiper-container {
-    width: 140rem;
+    //width: 140rem;
+    width: 88.6%;
     height: 100%;
     overflow: hidden;
     position: relative;
     z-index: 1;
     padding: 0 10rem 0 10rem;
     @media (max-width: 48em) {
-      padding: 0 0 28.6rem 0;
+      //padding: 0 0 28.6rem 0;
+      width: 100%;
     }
   }
 
@@ -32,31 +43,33 @@
   }
 
   &__swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
     font-size: 18px;
     background: #ffffff;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    @media (max-width: 48em) {
+      width: 57.3% !important;
+    }
   }
-
 
   &__img {
     display: flex;
     justify-content: center;
-
+    height: 100%;
+    width: 100%;
     img {
       object-fit: contain;
       height: 100%;
       width: 100%;
-      @media (max-width: 48em) {
-
-      }
     }
   }
-
-
-
 
   &__swiper-button-wrap{
 
@@ -88,12 +101,8 @@
       height: 10rem;
       background-size: 1.88rem;
       background-position: center center;
-      top: 67rem;
+      bottom: -46%;
       background-color: #ffffff;
-      box-shadow: 1.5rem 1.5rem 6rem #A7B1C4;
-      &:hover {
-        box-shadow: 1.5rem 1.5rem 6rem #A7B1C4;
-      }
     }
   }
 
@@ -107,7 +116,11 @@
     }
 
     @media (max-width: 48em) {
-      left: 62%;
+      left: 7%;
+      box-shadow: 2.5rem 2.5rem 10rem #A7B1C4;
+      &:hover {
+        box-shadow: 2.5rem 2.5rem 10rem #A7B1C4;
+      }
     }
   }
 
@@ -122,7 +135,11 @@
     }
 
     @media (max-width: 48em) {
-      right: 7%;
+      left: 28%;
+      box-shadow: 2.5rem 2.5rem 10rem #A7B1C4;
+      &:hover {
+        box-shadow: 2.5rem 2.5rem 10rem #A7B1C4;
+      }
     }
   }
 }
