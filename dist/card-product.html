@@ -511,14 +511,25 @@
 
     </div>
 
-        <div class="pop-up-price">
-            <div class="pop-up-price__wrap">
-                <div class="pop-up-price__form">
-                    <div class="pop-up-price__close"></div>
-                </div>
-
+    <div class="pop-up-price">
+        <div class="pop-up-price__wrap">
+            <div class="pop-up-price__inner">
+                <div class="pop-up-price__close"></div>
+                <p class="pop-up-price__subtitle">ТехполимерЭКО</p>
+                <p class="pop-up-price__title">Запрос цены</p>
+                <form action="#" class="pop-up-price__form">
+                    <input type="text" name="product" id="product" class="pop-up-price__form-input" placeholder="Товар">
+                    <input type="number" name="amount" id="amount" class="pop-up-price__form-input" placeholder="Количество">
+                    <input required type="text" name="username" id="username" class="pop-up-price__form-input" placeholder="Ф.И.О">
+                    <input required type="tel" name="tel" id="tel" class="pop-up-price__form-input" placeholder="Телефон">
+                    <input type="email" name="email" id="email" class="pop-up-price__form-input" placeholder="E-mail">
+                    <textarea id="comment" class="pop-up-price__form-textarea" placeholder="Комментарий" res></textarea>
+                    <button id="submit" class="pop-up-price__form-button">Запросить цену</button>
+                </form>
             </div>
+
         </div>
+    </div>
 
     <div class="card-product-carousel">
         <div class="card-product-carousel__inner">
