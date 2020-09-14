@@ -99,7 +99,6 @@
         color: #BDDB3C;
         transition: color 300ms ease;
         @media (max-width: 48em) {
-          display: none;
           &:hover {
             color: #9FACC4;
           }
@@ -116,6 +115,9 @@
       color: #9FACC4;
       text-decoration-line: underline;
       transition: color 300ms ease;
+      @media (max-width: 48em) {
+        display: none;
+      }
     }
 
     &__icon-phone {

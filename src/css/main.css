@@ -294,9 +294,6 @@ input[type=number] {
   transition: color 300ms ease;
 }
 @media (max-width: 48em) {
-  .header-nav .nav__request-call:hover .nav__request-call-text {
-    display: none;
-  }
   .header-nav .nav__request-call:hover .nav__request-call-text:hover {
     color: #9FACC4;
   }
@@ -310,6 +307,11 @@ input[type=number] {
   color: #9FACC4;
   text-decoration-line: underline;
   transition: color 300ms ease;
+}
+@media (max-width: 48em) {
+  .header-nav .nav__request-call-text {
+    display: none;
+  }
 }
 .header-nav .nav__icon-phone {
   margin: 0 0 0 0.6rem;
@@ -2651,10 +2653,6 @@ main .main-product {
   transition: color 300ms ease;
 }
 @media (max-width: 48em) {
-  .footer__request-call:hover .footer__request-call-text {
-    font-size: 2.8rem;
-    line-height: 2.85;
-  }
   .footer__request-call:hover .footer__request-call-text:hover {
     color: #9FACC4;
   }
@@ -2668,6 +2666,12 @@ main .main-product {
   color: #9FACC4;
   text-decoration-line: underline;
   transition: color 300ms ease;
+}
+@media (max-width: 48em) {
+  .footer__request-call-text {
+    font-size: 2.8rem;
+    line-height: 2.85;
+  }
 }
 @media (max-width: 48em) {
   .footer__categories {
