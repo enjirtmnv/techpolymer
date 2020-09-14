@@ -95,6 +95,16 @@
     &__request-call {
       display: flex;
       flex-direction: row;
+      &:hover .nav__request-call-text {
+        color: #BDDB3C;
+        transition: color 300ms ease;
+        @media (max-width: 48em) {
+          display: none;
+          &:hover {
+            color: #9FACC4;
+          }
+        }
+      }
     }
 
     &__request-call-text {
@@ -106,18 +116,6 @@
       color: #9FACC4;
       text-decoration-line: underline;
       transition: color 300ms ease;
-
-      &:hover {
-        color: #BDDB3C;
-        transition: color 300ms ease;
-      }
-
-      @media (max-width: 48em) {
-        display: none;
-        &:hover {
-          color: #9FACC4;
-        }
-      }
     }
 
     &__icon-phone {

@@ -37,6 +37,22 @@
                             <a class="nav__request-call-text" href="#">Заказать звонок</a>
                             <a class="nav__icon-phone" href="#"><img src="./img/icons/icon-phone.svg" alt="icon-phone"></a>
                         </div>
+                        <div class="pop-up-call">
+                            <div class="pop-up-call__wrap">
+                                <div class="pop-up-call__inner">
+                                    <div class="pop-up-call__close"></div>
+                                    <p class="pop-up-call__subtitle">ТехполимерЭКО</p>
+                                    <p class="pop-up-call__title">Запрос цены</p>
+                                    <form action="#" class="pop-up-call__form">
+                                        <input required type="text" name="username" id="username-call" class="pop-up-call__form-input" placeholder="Ф.И.О">
+                                        <input required type="tel" name="tel" id="tel-call" class="pop-up-call__form-input" placeholder="Телефон">
+                                        <textarea id="comment-call" class="pop-up-call__form-textarea" placeholder="Комментарий" res></textarea>
+                                        <button id="submit-call" class="pop-up-call__form-button">Запросить цену</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
                     </li>
                     <li class="nav__item">
                         <div class="nav__phone-email-wrap">
@@ -51,7 +67,10 @@
                 </ul>
 
             </nav>
+
         </div>
+
+
     </div>
 
     <div class="burger">
@@ -918,6 +937,24 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="pop-up-request">
+        <div class="pop-up-request__wrap">
+            <div class="pop-up-request__inner">
+                <div class="pop-up-request__close"></div>
+                <p class="pop-up-request__subtitle">ТехполимерЭКО</p>
+                <p class="pop-up-request__title">Запрос цены</p>
+                <form action="#" class="pop-up-request__form">
+                    <input required type="text" name="username" id="username-request" class="pop-up-request__form-input" placeholder="Ф.И.О">
+                    <input required type="tel" name="tel" id="tel-request" class="pop-up-request__form-input" placeholder="Телефон">
+                    <input type="email" name="email" id="email-request" class="pop-up-request__form-input" placeholder="E-mail">
+                    <textarea id="comment-request" class="pop-up-request__form-textarea" placeholder="Комментарий" res></textarea>
+                    <button id="submit-request" class="pop-up-request__form-button">Запросить цену</button>
+                </form>
+            </div>
+
         </div>
     </div>
 

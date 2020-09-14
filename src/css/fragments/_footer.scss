@@ -157,7 +157,17 @@
         margin: 0 0 0 1rem;
       }
     }
-
+    &:hover .footer__request-call-text {
+      color: #BDDB3C;
+      transition: color 300ms ease;
+      @media (max-width: 48em) {
+        font-size: 2.8rem;
+        line-height: 2.85;
+        &:hover {
+          color: #9FACC4;
+        }
+      }
+    }
   }
 
   &__request-call-text {
@@ -169,17 +179,6 @@
     color: #9FACC4;
     text-decoration-line: underline;
     transition: color 300ms ease;
-    &:hover{
-      color: #BDDB3C;
-      transition: color 300ms ease;
-    }
-    @media (max-width: 48em) {
-      font-size: 2.8rem;
-      line-height: 2.85;
-      &:hover {
-        color: #9FACC4;
-      }
-    }
   }
 
   &__categories{
