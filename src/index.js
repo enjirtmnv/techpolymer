@@ -12,7 +12,7 @@ import './js/list-agricultures'
 import './js/list-desk-application'
 
 import './js/swiper-card-product'
-import './js/card-product-info'
+// import './js/card-product-info'
 import './js/pop-up-price'
 import './js/pop-up-call'
 import './js/pop-up-request'
