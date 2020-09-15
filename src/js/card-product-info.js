@@ -2,14 +2,23 @@ import $ from 'jquery';
 
 $(document).ready(function(){
 
-    $('ul.tabs li').click(function(){
-        var tab_id = $(this).attr('data-tab');
+    $(".card-product-info__nav-list li a").on('click', function(event) {
 
-        $('ul.tabs li').removeClass('current');
-        $('.tab-content').removeClass('current');
+        if (this.hash !== "") {
+            event.preventDefault();
 
-        $(this).addClass('current');
-        $("#"+tab_id).addClass('current');
-    })
+            let hash = this.hash;
 
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 500, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+
+    $('.card-product-info__nav-list li').on('click', function() {
+        $('.card-product-info__nav-list li').removeClass('active_anchor');
+        $(this).addClass('active_anchor');
+    });
 });

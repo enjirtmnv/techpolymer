@@ -44,10 +44,14 @@
                                     <p class="pop-up-call__subtitle">ТехполимерЭКО</p>
                                     <p class="pop-up-call__title">Заказать звонок</p>
                                     <form action="#" class="pop-up-call__form">
-                                        <input required type="text" name="username" id="username-call" class="pop-up-call__form-input" placeholder="Ф.И.О">
-                                        <input required type="tel" name="tel" id="tel-call" class="pop-up-call__form-input" placeholder="Телефон">
-                                        <textarea id="comment-call" class="pop-up-call__form-textarea" placeholder="Комментарий" res></textarea>
-                                        <button id="submit-call" class="pop-up-call__form-button">Запросить цену</button>
+                                        <input required type="text" name="username" id="username-call"
+                                               class="pop-up-call__form-input" placeholder="Ф.И.О">
+                                        <input required type="tel" name="tel" id="tel-call"
+                                               class="pop-up-call__form-input" placeholder="Телефон">
+                                        <textarea id="comment-call" class="pop-up-call__form-textarea"
+                                                  placeholder="Комментарий" res></textarea>
+                                        <button id="submit-call" class="pop-up-call__form-button">Запросить цену
+                                        </button>
                                     </form>
                                 </div>
 
@@ -534,12 +538,18 @@
                 <p class="pop-up-price__subtitle">ТехполимерЭКО</p>
                 <p class="pop-up-price__title">Заказать звонок</p>
                 <form action="#" class="pop-up-price__form">
-                    <input type="text" name="product" id="product-price" class="pop-up-price__form-input" placeholder="Товар">
-                    <input type="number" name="amount" id="amount-price" class="pop-up-price__form-input" placeholder="Количество">
-                    <input required type="text" name="username" id="username-price" class="pop-up-price__form-input" placeholder="Ф.И.О">
-                    <input required type="tel" name="tel" id="tel-price" class="pop-up-price__form-input" placeholder="Телефон">
-                    <input type="email" name="email" id="email-price" class="pop-up-price__form-input" placeholder="E-mail">
-                    <textarea id="comment-price" class="pop-up-price__form-textarea" placeholder="Комментарий" res></textarea>
+                    <input type="text" name="product" id="product-price" class="pop-up-price__form-input"
+                           placeholder="Товар">
+                    <input type="number" name="amount" id="amount-price" class="pop-up-price__form-input"
+                           placeholder="Количество">
+                    <input required type="text" name="username" id="username-price" class="pop-up-price__form-input"
+                           placeholder="Ф.И.О">
+                    <input required type="tel" name="tel" id="tel-price" class="pop-up-price__form-input"
+                           placeholder="Телефон">
+                    <input type="email" name="email" id="email-price" class="pop-up-price__form-input"
+                           placeholder="E-mail">
+                    <textarea id="comment-price" class="pop-up-price__form-textarea" placeholder="Комментарий"
+                              res></textarea>
                     <button id="submit-price" class="pop-up-price__form-button">Заказать звонок</button>
                 </form>
             </div>
@@ -596,97 +606,48 @@
             <nav class="card-product-info__nav">
                 <div class="card-product-info__nav-list-wrap">
                     <div class="card-product-info__nav-list-inner">
-                        <ul class="card-product-info__nav-list tabs">
-                            <li class="current" data-tab="tab-1">Характеристики</li>
-                            <li data-tab="tab-2">Преимущества</li>
-                            <li data-tab="tab-3">Дополнительная информация</li>
-                            <li data-tab="tab-4">Отзывы</li>
-                            <li data-tab="tab-5">Похожие товары</li>
+                        <ul class="card-product-info__nav-list">
+                            <li class="active_anchor"><a href="#anchor-1">Характеристики</a></li>
+                            <li><a href="#anchor-2">Преимущества</a></li>
+                            <li><a href="#anchor-3">Дополнительная информация</a></li>
+                            <li><a href="#anchor-4">Отзывы</a></li>
+                            <li><a href="#anchor-5">Похожие товары</a></li>
                         </ul>
                     </div>
                 </div>
-
-
-                <div class="characteristic-cp tab-content current" id="tab-1">
-                    <p class="characteristic-cp__title">Характеристики</p>
-                    <ul class="characteristic-cp__list">
-                        <li><span>Длина, мм</span><span></span><span>1200</span></li>
-                        <li><span>Температура</span><span></span><span>-30&#176; - +40&#176;С</span></li>
-                        <li><span>Ширина, мм</span><span></span><span>1000</span></li>
-                        <li><span>Температура чистки (мойки)</span><span></span><span>+90&#176;С</span></li>
-                        <li><span>Высота, мм</span><span></span><span>760</span></li>
-                        <li><span>Цвет</span><span></span><span>(стандартный)</span></li>
-                        <li><span>Статическая нагрузка, кг</span><span></span><span>4500</span></li>
-                        <li><span>Количество на паллете, шт</span><span></span><span>4</span></li>
-                        <li><span>Динамическая нагрузка, кг</span><span></span><span>1500</span></li>
-                        <li><span>Количество в штабеле, шт</span><span></span><span>7</span></li>
-                        <li><span>Объём, литр</span><span></span><span>660</span></li>
-                        <li><span>Количество в штабеле с грузом, шт</span><span></span><span>7</span></li>
-                        <li><span>Максимальная нагрузка, кг</span><span></span><span>4500</span></li>
-                        <li><span>Количество в еврофуре, шт</span><span></span><span>104</span></li>
-                        <li><span>Максимальная загрузка, кг</span><span></span><span>510</span></li>
-                        <li><span>Опции</span><span></span><span>нанесение логотипа; индивидуальный цвет; UV&#160;-&#160;защита; морозостойкость</span>
-                        </li>
-                        <li><span>Сырье</span><span></span><span>HDPE</span></li>
-                    </ul>
-                </div>
-
-<!--                <div class="advantage-cp tab-content" id="tab-2">-->
-<!--                    <p class="advantage-cp__title">Преимущества</p>-->
-<!--                    <ul class="advantage-cp__list">-->
-<!--                        <li><span>Складские системы</span></li>-->
-<!--                        <li><span>Штабелирование</span></li>-->
-<!--                        <li><span>Организация пространства</span></li>-->
-<!--                        <li><span>УФ-защита</span></li>-->
-<!--                        <li><span>Водонепроницаемость</span></li>-->
-<!--                        <li><span>Габариты</span></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-
-<!--                <div class="more-info-cp tab-content" id="tab-3">-->
-<!--                    <p class="more-info-cp__title">Дополнительная информация</p>-->
-<!--                    <ul class="more-info-cp__list">-->
-<!--                        <li><span>Подходит для применения-->
-<!--в автоматизированных складах</span></li>-->
-<!--                        <li><span>Может штабелироваться в несколько ярусов</span></li>-->
-<!--                        <li><span>Экономит до 75% пространства склада-->
-<!--для хранения </span></li>-->
-<!--                        <li><span>Защита вашей продукции-->
-<!--от ультрафиолетовых лучей</span></li>-->
-<!--                        <li><span>Вся наша продукция обладает водонепроницаемостью</span></li>-->
-<!--                        <li><span>Размеры наших товаров разработаны-->
-<!--для максимально удобного пользования</span></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-
-<!--                <div class="reviews-cp tab-content" id="tab-4">-->
-<!--                    <p class="reviews-cp__title">Отзывы</p>-->
-<!--                    <ul class="reviews-cp__list">-->
-<!--                        <li><span>Все супер!</span></li>-->
-<!--                        <li><span>Буду заказывать еще :)</span></li>-->
-<!--                        <li><span>Очень понравилось</span></li>-->
-<!--                        <li><span>Качественно сделано</span></li>-->
-<!--                        <li><span>Быстрая доствка</span></li>-->
-<!--                        <li><span>Очень вежливо общались, спасибо!</span></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-
-<!--                <div class="similar-cp tab-content" id="tab-5">-->
-<!--                    <p class="similar-cp__title">Похожие товары</p>-->
-<!--                    <ul class="similar-cp__list">-->
-
-<!--                        <li><span>Товар 1</span></li>-->
-<!--                        <li><span>Товар 2</span></li>-->
-<!--                        <li><span>Товар 3</span></li>-->
-<!--                        <li><span>Товар 4</span></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-
             </nav>
         </div>
     </div>
 
-    <div class="card-product-advantages">
+    <div class="characteristic-cp active_anchor" id="anchor-1">
+        <div class="container">
+            <div class="characteristic-cp__wrap">
+                <p class="characteristic-cp__title">Характеристики</p>
+                <ul class="characteristic-cp__list">
+                    <li><span>Длина, мм</span><span></span><span>1200</span></li>
+                    <li><span>Температура</span><span></span><span>-30&#176; - +40&#176;С</span></li>
+                    <li><span>Ширина, мм</span><span></span><span>1000</span></li>
+                    <li><span>Температура чистки (мойки)</span><span></span><span>+90&#176;С</span></li>
+                    <li><span>Высота, мм</span><span></span><span>760</span></li>
+                    <li><span>Цвет</span><span></span><span>(стандартный)</span></li>
+                    <li><span>Статическая нагрузка, кг</span><span></span><span>4500</span></li>
+                    <li><span>Количество на паллете, шт</span><span></span><span>4</span></li>
+                    <li><span>Динамическая нагрузка, кг</span><span></span><span>1500</span></li>
+                    <li><span>Количество в штабеле, шт</span><span></span><span>7</span></li>
+                    <li><span>Объём, литр</span><span></span><span>660</span></li>
+                    <li><span>Количество в штабеле с грузом, шт</span><span></span><span>7</span></li>
+                    <li><span>Максимальная нагрузка, кг</span><span></span><span>4500</span></li>
+                    <li><span>Количество в еврофуре, шт</span><span></span><span>104</span></li>
+                    <li><span>Максимальная загрузка, кг</span><span></span><span>510</span></li>
+                    <li><span>Опции</span><span></span><span>нанесение логотипа; индивидуальный цвет; UV&#160;-&#160;защита; морозостойкость</span>
+                    </li>
+                    <li><span>Сырье</span><span></span><span>HDPE</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-product-advantages" id="anchor-2">
         <div class="container">
             <p class="card-product-advantages__title">Преимущества</p>
             <ul class="card-product-advantages__list">
@@ -740,7 +701,7 @@
         </div>
     </div>
 
-    <div class="card-product-more-info">
+    <div class="card-product-more-info" id="anchor-3">
         <div class="container">
             <div class="card-product-more-info__wrap">
                 <p class="card-product-more-info__title">Дополнительная информация</p>
@@ -806,7 +767,7 @@
         </div>
     </div>
 
-    <div class="similar-products">
+    <div class="similar-products" id="anchor-5">
         <div class="container">
             <div class="similar-products-header">
                 <div class="similar-products-header__text-wrap">
