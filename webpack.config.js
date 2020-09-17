@@ -9,7 +9,8 @@ module.exports = {
         cardProduct: './src/pages/card-product.js',
         catalog: './src/pages/catalog.js',
         catalogPallets: './src/pages/catalog-pallets.js',
-        about: './src/pages/about.js'
+        contacts: './src/pages/contacts.js',
+        about: './src/pages/about.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -39,6 +40,12 @@ module.exports = {
         new HtmlWepackPlugin({
             template: "./src/pages/catalog-pallets.html",
             filename: "./catalog-pallets.html",
+            inject: true,
+            chunks: ['index'],
+        }),
+        new HtmlWepackPlugin({
+            template: "./src/pages/contacts.html",
+            filename: "./contacts.html",
             inject: true,
             chunks: ['index'],
         }),
