@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>techpolymer-eco</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
 
 </head>
 <body class="preload">
@@ -27,7 +29,7 @@
                             <img src="images/logo-header-nav.png" alt="logo-eco-techpolymer">
                         </a>
                     </li>
-                    <li class="nav__item"><a class="nav__name" href="#">Каталог продукции</a></li>
+                    <li class="nav__item"><a class="nav__name" href="./catalog.html">Каталог продукции</a></li>
                     <li class="nav__item"><a class="nav__name" href="#">О компании</a></li>
                     <li class="nav__item"><a class="nav__name" href="#">Аренда поддонов</a></li>
                     <li class="nav__item"><a class="nav__name" href="#">Выкуп пластика</a></li>
@@ -44,9 +46,12 @@
                                     <p class="pop-up-call__subtitle">ТехполимерЭКО</p>
                                     <p class="pop-up-call__title">Запрос цены</p>
                                     <form action="#" class="pop-up-call__form">
-                                        <input required type="text" name="username" id="username-call" class="pop-up-call__form-input" placeholder="Ф.И.О">
-                                        <input required type="tel" name="tel" id="tel-call" class="pop-up-call__form-input" placeholder="Телефон">
-                                        <textarea id="comment-call" class="pop-up-call__form-textarea" placeholder="Комментарий" res></textarea>
+                                        <label for="username-call"><input required type="text" name="username" id="username-call" class="pop-up-call__form-input" placeholder="Ф.И.О"></label>
+
+                                        <label for="tel-call"><input required type="tel" name="tel" id="tel-call" class="pop-up-call__form-input" placeholder="Телефон"></label>
+
+                                        <textarea id="comment-call" class="pop-up-call__form-textarea" placeholder="Комментарий"></textarea>
+
                                         <button id="submit-call" class="pop-up-call__form-button">Заказать звонок</button>
                                     </form>
                                 </div>
@@ -433,7 +438,7 @@
                                         <img src="images/application-5.png"
                                              alt="icon-scope-of-application">
                                     </div>
-                                    <span class="list-desk-application__title-name">Сельское хозяйство</span>
+                                    <span class="list-desk-application__title-name">Рыбная промышленность</span>
                                 </a>
                             </div>
 
@@ -456,7 +461,7 @@
                                         <img src="images/application-8.png"
                                              alt="icon-scope-of-application">
                                     </div>
-                                    <span class="list-desk-application__title-name">Сельское хозяйство</span>
+                                    <span class="list-desk-application__title-name">Аренда</span>
                                 </a>
                             </div>
 
@@ -758,7 +763,7 @@
                         </div>
                     </div>
 
-                    <div class="carousel__swiper-slide">
+                    <div class="swiper-slide carousel__swiper-slide">
                         <div class="carousel__content">
                             <div class="carousel__text-wrap">
                                 <span class="carousel__text-title">Информация о товаре:</span>
@@ -780,7 +785,7 @@
                         </div>
                     </div>
 
-                    <div class="carousel__swiper-slide">
+                    <div class="swiper-slide carousel__swiper-slide">
                         <div class="carousel__content">
                             <div class="carousel__text-wrap">
                                 <span class="carousel__text-title">Информация о товаре:</span>
@@ -802,7 +807,7 @@
                         </div>
                     </div>
 
-                    <div class="carousel__swiper-slide">
+                    <div class="swiper-slide carousel__swiper-slide">
                         <div class="carousel__content">
                             <div class="carousel__text-wrap">
                                 <span class="carousel__text-title">Информация о товаре:</span>
@@ -1105,10 +1110,12 @@
         </div>
     </div>
 
-    <div class="maps">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A59506d3cd556457b6e07671f2a1c173e375ad558fad605f2cd58655df1f14ee3&amp;source=constructor"
-                width="100%" height="543px" frameborder="0"></iframe>
-    </div>
+<!--    <div class="map">-->
+        <!--<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A59506d3cd556457b6e07671f2a1c173e375ad558fad605f2cd58655df1f14ee3&amp;source=constructor"
+                width="100%" height="543px" frameborder="0"></iframe>-->
+<!--    </div>-->
+
+    <div class="map" id="map"></div>
 
 </main>
 

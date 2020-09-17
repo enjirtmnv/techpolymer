@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>card-product</title>
+
+</head>
+<body class="preload">
+
+<header class="header">
+    <div class="header-nav">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav__list">
+
+                    <li class="nav__item nav__mobile-burger">
+                        <a class="nav__burger" href="#">
+                            <img src="../img/icons/burger-menu.svg" alt="icon-burger-menu">
+                        </a>
+                    </li>
+
+                    <li class="nav__item nav__mobile-item">
+                        <a class="nav__logo" href="card-product.html">
+                            <img src="../img/icons/logo-header-nav.png" alt="logo-eco-techpolymer">
+                        </a>
+                    </li>
+                    <li class="nav__item"><a class="nav__name" href="./catalog.html">Каталог продукции</a></li>
+                    <li class="nav__item"><a class="nav__name" href="#">О компании</a></li>
+                    <li class="nav__item"><a class="nav__name" href="#">Аренда поддонов</a></li>
+                    <li class="nav__item"><a class="nav__name" href="#">Выкуп пластика</a></li>
+                    <li class="nav__item"><a class="nav__name" href="#">Контакты</a></li>
+                    <li class="nav__item nav__mobile-item">
+                        <div class="nav__request-call">
+                            <a class="nav__request-call-text" href="#">Заказать звонок</a>
+                            <a class="nav__icon-phone" href="#"><img src="../img/icons/icon-phone.svg" alt="icon-phone"></a>
+                        </div>
+                        <div class="pop-up-call">
+                            <div class="pop-up-call__wrap">
+                                <div class="pop-up-call__inner">
+                                    <div class="pop-up-call__close"></div>
+                                    <p class="pop-up-call__subtitle">ТехполимерЭКО</p>
+                                    <p class="pop-up-call__title">Запрос цены</p>
+                                    <form action="#" class="pop-up-call__form">
+                                        <label for="username-call"></label>
+                                        <input required type="text" name="username" id="username-call"
+                                               class="pop-up-call__form-input" placeholder="Ф.И.О">
+                                        <label for="tel-call"></label>
+                                        <input required type="tel" name="tel" id="tel-call"
+                                               class="pop-up-call__form-input" placeholder="Телефон">
+                                        <label for="comment-call"></label>
+                                        <textarea id="comment-call" class="pop-up-call__form-textarea"
+                                                  placeholder="Комментарий"></textarea>
+                                        <button id="submit-call" class="pop-up-call__form-button">Заказать звонок
+                                        </button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <div class="nav__phone-email-wrap">
+                            <div class="nav__phone-email-text-wrap">
+                                <a href="#" class="nav__phone-text">8 800 999 99 99</a>
+                                <a href="#" class="nav__email-text">pochta@mail.ru</a>
+                            </div>
+                            <a class="nav__icon-email" href="#"><img src="../img/icons/icon-email.svg"
+                                                                     alt="icon-email"></a>
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="burger">
+        <div class="burger__inner">
+
+            <div class="burger__nav-item burger__about">
+                <a class="burger__nav-item-link" href="#">
+                    <div class="burger__nav-arrow burger__about-arrow"></div>
+                    <span class="burger__nav-name">О компании</span>
+                </a>
+            </div>
+
+            <div class="burger__nav-item burger__rent">
+                <a class="burger__nav-item-link" href="#">
+                    <div class="burger__nav-arrow burger__rent-arrow"></div>
+                    <span class="burger__nav-name">Аренда поддонов</span>
+                </a>
+            </div>
+
+            <div class="burger__nav-item burger__ransom">
+                <a class="burger__nav-item-link" href="#">
+                    <div class="burger__nav-arrow burger__ransom-arrow"></div>
+                    <span class="burger__nav-name">Выкуп пластика</span>
+                </a>
+            </div>
+
+            <div class="burger__nav-item burger__contacts">
+                <a class="burger__nav-item-link" href="#">
+                    <div class="burger__nav-arrow burger__contacts-arrow"></div>
+                    <span class="burger__nav-name">Контакты</span>
+                </a>
+            </div>
+
+            <div class="burger__nav-item burger__catalog ">
+                <a class="burger__nav-item-link" href="#">
+                    <div class="burger__nav-arrow burger__catalog-arrow"></div>
+                    <span class="burger__nav-name">Каталог</span>
+                </a>
+                <div class="burger-catalog">
+                    <div class="burger-catalog__inner">
+
+                        <div class="burger-catalog__menu-item">
+                            <a class="burger-catalog__menu-item-link" href="#">
+                                <div class="burger-catalog__menu-img">
+                                    <img src="../img/categories/categories-1.png" alt="icon-categories">
+                                </div>
+                                <span class="burger-catalog__menu-name">Сферы применения</span>
+                            </a>
+                        </div>
+                        <div class="burger-catalog__menu-item">
+                            <a class="burger-catalog__menu-item-link" href="#">
+                                <div class="burger-catalog__menu-img">
+                                    <img src="../img/categories/categories-2.png" alt="icon-categories">
+                                </div>
+                                <span class="burger-catalog__menu-name">Кон-ры для мусора</span>
+                            </a>
+                        </div>
+                        <div class="burger-catalog__menu-item">
+                            <a class="burger-catalog__menu-item-link" href="#">
+                                <div class="burger-catalog__menu-img">
+                                    <img src="../img/categories/categories-3.png" alt="icon-categories">
+                                </div>
+                                <span class="burger-catalog__menu-name">Поддоны и паллеты</span>
+                            </a>
+                        </div>
+                        <div class="burger-catalog__menu-item">
+                            <a class="burger-catalog__menu-item-link" href="#">
+                                <div class="burger-catalog__menu-img">
+                                    <img src="../img/categories/categories-4.png" alt="icon-categories">
+                                </div>
+                                <span class="burger-catalog__menu-name">Большие контейнеры</span>
+                            </a>
+                        </div>
+                        <div class="burger-catalog__menu-item">
+                            <a class="burger-catalog__menu-item-link" href="#">
+                                <div class="burger-catalog__menu-img">
+                                    <img src="../img/categories/categories-5.png" alt="icon-categories">
+                                </div>
+                                <span class="burger-catalog__menu-name">Ящики</span>
+                            </a>
+                        </div>
+                        <div class="burger-catalog__menu-item">
+                            <a class="burger-catalog__menu-item-link" href="#">
+                                <div class="burger-catalog__menu-img">
+                                    <img src="../img/categories/categories-6.png" alt="icon-categories">
+                                </div>
+                                <span class="burger-catalog__menu-name">Контейнеры ТКО</span>
+                            </a>
+                        </div>
+                        <div class="burger-catalog__menu-item">
+                            <a class="burger-catalog__menu-item-link" href="#">
+                                <div class="burger-catalog__menu-img">
+                                    <img src="../img/categories/categories-7.png" alt="icon-categories">
+                                </div>
+                                <span class="burger-catalog__menu-name">Крупногабаритные к.</span>
+                            </a>
+                        </div>
+                        <div class="burger-catalog__menu-item">
+                            <a class="burger-catalog__menu-item-link" href="#">
+                                <div class="burger-catalog__menu-img">
+                                    <img src="../img/categories/categories-8.png" alt="icon-categories">
+                                </div>
+                                <span class="burger-catalog__menu-name">Вкладываемые кон-ры</span>
+                            </a>
+                        </div>
+                        <div class="burger-catalog__menu-item">
+                            <a class="burger-catalog__menu-item-link" href="#">
+                                <div class="burger-catalog__menu-img">
+                                    <img src="../img/categories/categories-9.png" alt="icon-categories">
+                                </div>
+                                <span class="burger-catalog__menu-name">Складывающиеся к</span>
+                            </a>
+                        </div>
+                        <div class="burger-catalog__menu-item">
+                            <a class="burger-catalog__menu-item-link" href="#">
+                                <div class="burger-catalog__menu-img">
+                                    <img src="../img/categories/categories-10.png" alt="icon-categories">
+                                </div>
+                                <span class="burger-catalog__menu-name">Полочные кон-ры</span>
+                            </a>
+                        </div>
+                        <div class="burger-catalog__menu-item">
+                            <a class="burger-catalog__menu-item-link" href="#">
+                                <div class="burger-catalog__menu-img">
+                                    <img src="../img/categories/categories-11.png" alt="icon-categories">
+                                </div>
+                                <span class="burger-catalog__menu-name">Тара в антистатическом исполнении</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-categories-cp">
+        <div class="categories">
+
+            <div class="categories__wrapper">
+                <div class="container">
+                    <div class="categories__inner">
+                        <div class="categories__item categories__list-desk-application">
+                            <a class="categories__item-link" href="#">
+                                <div class="categories__img">
+                                    <img src="../img/categories/categories-1.png" alt="icon-scope-of-application">
+                                </div>
+                                <span class="categories__name">Сферы применения</span>
+                            </a>
+                        </div>
+                        <div class="categories__item">
+                            <a class="categories__item-link categories__refrigeration-link" href="#">
+                                <div class="categories__img">
+                                    <img src="../img/categories/categories-2.png" alt="icon-garbage-containers">
+                                </div>
+                                <span class="categories__name">Контейнеры для мусора</span>
+                            </a>
+                        </div>
+                        <div class="categories__item">
+                            <a class="categories__item-link" href="#">
+                                <div class="categories__img">
+                                    <img src="../img/categories/categories-3.png" alt="icon-pallets">
+                                </div>
+                                <span class="categories__name">Поддоны и паллеты</span>
+                            </a>
+                        </div>
+                        <div class="categories__item">
+                            <a class="categories__item-link" href="#">
+                                <div class="categories__img">
+                                    <img src="../img/categories/categories-4.png" alt="icon-large-containers">
+                                </div>
+                                <span class="categories__name">Большие контейнеры</span>
+                            </a>
+                        </div>
+                        <div class="categories__item">
+                            <a class="categories__item-link" href="#">
+                                <div class="categories__img">
+                                    <img src="../img/categories/categories-5.png" alt="icon-boxes">
+                                </div>
+                                <span class="categories__name">Ящики</span>
+                            </a>
+                        </div>
+                        <div class="categories__item">
+                            <a class="categories__item-link" href="#">
+                                <div class="categories__img">
+                                    <img src="../img/categories/categories-6.png" alt="icon-tco-containers">
+                                </div>
+                                <span class="categories__name">Контейнеры ТКО</span>
+                            </a>
+                        </div>
+                        <div class="categories__item">
+                            <a class="categories__item-link" href="#">
+                                <div class="categories__img">
+                                    <img src="../img/categories/categories-11.png" alt="icon-more-categories">
+                                </div>
+                                <span class="categories__name">+5 категорий</span>
+                            </a>
+                        </div>
+                        <div class="categories__item categories__item-all-categories">
+                            <a class="categories__item-link" href="#">
+                                <div class="categories__img">
+                                    <span class="categories__img-plus">+</span>
+                                </div>
+                                <span class="categories__name">Все категории</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="list-desk-application">
+            <div class="container">
+                <div class="list-desk-application__inner">
+                    <div class="list-desk-application__column">
+
+                        <div class="list-desk-application__item">
+                            <div class="list-desk-application__title-wrap">
+                                <a class="list-desk-application__title-link" href="#">
+                                    <div class="list-desk-application__img">
+                                        <img src="../img/list-application/application-1.png"
+                                             alt="icon-scope-of-application">
+                                    </div>
+                                    <span class="list-desk-application__title-name">Сельское хозяйство</span>
+                                </a>
+                            </div>
+
+                            <ul class="list-desk-application__list">
+                                <li><a href="#">Контейнеры для мусора</a></li>
+                                <li><a href="#">Поддоны</a></li>
+                                <li><a href="#">Палеты</a></li>
+                                <li><a href="#">Большие контейнеры</a></li>
+                                <li><a href="#">Ящики</a></li>
+                                <li><a href="#">Контейнера ТКО</a></li>
+                                <li><a href="#">Крупногабаритные контейнера</a></li>
+                                <li><a href="#">Вкладываемые контейнера</a></li>
+                                <li><a href="#">Складываемые контейнера</a></li>
+                                <li><a href="#">Полочные контейнера</a></li>
+                                <li><a href="#">Тара в антистатическом исполнении</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="list-desk-application__item">
+                            <div class="list-desk-application__title-wrap">
+                                <a class="list-desk-application__title-link" href="#">
+                                    <div class="list-desk-application__img">
+                                        <img src="../img/list-application/application-7.png"
+                                             alt="icon-scope-of-application">
+                                    </div>
+                                    <span class="list-desk-application__title-name">Сыроделие</span>
+                                </a>
+                            </div>
+
+                            <ul class="list-desk-application__list">
+                                <li><a href="#">Контейнеры для мусора</a></li>
+                                <li><a href="#">Поддоны</a></li>
+                                <li><a href="#">Палеты</a></li>
+                                <li><a href="#">Большие контейнеры</a></li>
+                                <li><a href="#">Ящики</a></li>
+                                <li><a href="#">Контейнера ТКО</a></li>
+                                <li><a href="#">Крупногабаритные контейнера</a></li>
+                                <li><a href="#">Вкладываемые контейнера</a></li>
+                                <li><a href="#">Складываемые контейнера</a></li>
+                                <li><a href="#">Полочные контейнера</a></li>
+                                <li><a href="#">Тара в антистатическом исполнении</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-desk-application__column">
+                        <div class="list-desk-application__item">
+
+                            <div class="list-desk-application__title-wrap">
+                                <a class="list-desk-application__title-link" href="#">
+                                    <div class="list-desk-application__img">
+                                        <img src="../img/list-application/application-2.png"
+                                             alt="icon-scope-of-application">
+                                    </div>
+                                    <span class="list-desk-application__title-name">Индустриальная тара</span>
+                                </a>
+                            </div>
+
+                            <ul class="list-desk-application__list">
+                                <li><a href="#">Контейнеры для мусора</a></li>
+                                <li><a href="#">Поддоны</a></li>
+                                <li><a href="#">Палеты</a></li>
+                                <li><a href="#">Большие контейнеры</a></li>
+                                <li><a href="#">Ящики</a></li>
+                            </ul>
+                        </div>
+                        <div class="list-desk-application__item">
+
+                            <div class="list-desk-application__title-wrap">
+                                <a class="list-desk-application__title-link" href="#">
+                                    <div class="list-desk-application__img">
+                                        <img src="../img/list-application/application-5.png"
+                                             alt="icon-scope-of-application">
+                                    </div>
+                                    <span class="list-desk-application__title-name">Логистика</span>
+                                </a>
+                            </div>
+
+                            <ul class="list-desk-application__list">
+                                <li><a href="#">Контейнеры для мусора</a></li>
+                                <li><a href="#">Поддоны</a></li>
+                                <li><a href="#">Палеты</a></li>
+                                <li><a href="#">Большие контейнеры</a></li>
+                                <li><a href="#">Ящики</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-desk-application__column">
+                        <div class="list-desk-application__item">
+                            <div class="list-desk-application__title-wrap">
+                                <a class="list-desk-application__title-link" href="#">
+                                    <div class="list-desk-application__img">
+                                        <img src="../img/list-application/application-3.png"
+                                             alt="icon-scope-of-application">
+                                    </div>
+                                    <span class="list-desk-application__title-name">Утилизация отходов</span>
+                                </a>
+                            </div>
+
+                            <ul class="list-desk-application__list">
+                                <li><a href="#">Контейнеры для мусора</a></li>
+                                <li><a href="#">Поддоны</a></li>
+                            </ul>
+                        </div>
+                        <div class="list-desk-application__item">
+                            <div class="list-desk-application__title-wrap">
+                                <a class="list-desk-application__title-link" href="#">
+                                    <div class="list-desk-application__img">
+                                        <img src="../img/list-application/application-6.png"
+                                             alt="icon-scope-of-application">
+                                    </div>
+                                    <span class="list-desk-application__title-name">Мясо-молочная промышленность</span>
+                                </a>
+                            </div>
+
+                            <ul class="list-desk-application__list">
+                                <li><a href="#">Контейнеры для мусора</a></li>
+                                <li><a href="#">Поддоны</a></li>
+                                <li><a href="#">Палеты</a></li>
+                                <li><a href="#">Большие контейнеры</a></li>
+                                <li><a href="#">Ящики</a></li>
+                                <li><a href="#">Контейнера ТКО</a></li>
+                                <li><a href="#">Крупногабаритные контейнера</a></li>
+                                <li><a href="#">Вкладываемые контейнера</a></li>
+                                <li><a href="#">Складываемые контейнера</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-desk-application__column">
+                        <div class="list-desk-application__item">
+                            <div class="list-desk-application__title-wrap">
+                                <a class="list-desk-application__title-link" href="#">
+                                    <div class="list-desk-application__img">
+                                        <img src="../img/list-application/application-5.png"
+                                             alt="icon-scope-of-application">
+                                    </div>
+                                    <span class="list-desk-application__title-name">Рыбная промышленность</span>
+                                </a>
+                            </div>
+
+                            <ul class="list-desk-application__list">
+                                <li><a href="#">Контейнеры для мусора</a></li>
+                                <li><a href="#">Поддоны</a></li>
+                                <li><a href="#">Палеты</a></li>
+                                <li><a href="#">Большие контейнеры</a></li>
+                                <li><a href="#">Ящики</a></li>
+                                <li><a href="#">Контейнера ТКО</a></li>
+                                <li><a href="#">Крупногабаритные контейнера</a></li>
+                                <li><a href="#">Вкладываемые контейнера</a></li>
+                                <li><a href="#">Складываемые контейнера</a></li>
+                            </ul>
+                        </div>
+                        <div class="list-desk-application__item">
+                            <div class="list-desk-application__title-wrap">
+                                <a class="list-desk-application__title-link" href="#">
+                                    <div class="list-desk-application__img">
+                                        <img src="../img/list-application/application-8.png"
+                                             alt="icon-scope-of-application">
+                                    </div>
+                                    <span class="list-desk-application__title-name">Аренда</span>
+                                </a>
+                            </div>
+
+                            <ul class="list-desk-application__list">
+                                <li><a href="#">Контейнеры для мусора</a></li>
+                                <li><a href="#">Поддоны</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<main>
+
+
+    <div class="catalog-main">
+        <div class="carousel-catalog">
+
+            <div class="carousel-catalog__inner">
+                <div class="carousel-catalog__swiper-button-wrap">
+                    <div class="carousel-catalog__swiper-button-prev"></div>
+                    <div class="carousel-catalog__swiper-button-next"></div>
+                </div>
+
+                <div class="swiper-container carousel-catalog__swiper-container">
+                    <div class="swiper-wrapper carousel-catalog__swiper-wrapper">
+
+                        <div class="swiper-slide carousel-catalog__swiper-slide">
+                            <div class="carousel-catalog__text-wrap">
+                                <span class="carousel-catalog__info">В наличии</span>
+                                <span class="carousel-catalog__price">10 000 руб.</span>
+                                <a href="#" class="carousel-catalog__name">Контейнеры ТКО название несколько строк</a>
+                            </div>
+                            <a href="#" class="carousel-catalog__img">
+                                <img src="../img/catalog-main/catalog-main-2.png" alt="product">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="catalog-main__wrap">
+                <div class="catalog-main__img-circle-wrap">
+                    <div class="catalog-main__img-circle-inner">
+                    </div>
+                </div>
+
+                <div class="breadcrumbs-catalog-main">
+
+                    <ul class="breadcrumbs-catalog-main__list">
+                        <li class="breadcrumbs-catalog-main__item"><a href="./"><span>Главная</span></a></li>
+                        <li class="breadcrumbs-catalog-main__item breadcrumbs-catalog-main__item-active">
+                            <span>Каталог</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="catalog-main__title"><span>Каталог</span></div>
+
+                <div class="catalog-main__inner">
+                    <div class="catalog-main__text-wrap">
+                        <span class="catalog-main__text-title">Цель нашей компании - развивать промышленность страны.</span>
+                        <span class="catalog-main__text-par">Поставка широкого спектра товаров, контейнеров и грузоподъемного оборудования как для корпоративных клиентов так и для частных лиц.</span>
+                        <a class="catalog-main__text-button" href="#"><span>Смотреть</span></a>
+                    </div>
+
+                    <div class="catalog-main__img-wrap">
+
+                        <a><img src="../img/catalog-main/catalog-main-1.png" alt="catalog-image"></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="all-catalog-header">
+        <div class="container">
+            <div class="all-catalog-header__wrap">
+                <span class="all-catalog-header__title">Все товары</span>
+
+                <div class="all-catalog-header__filter">
+                    <div class="all-catalog-header__filter-wrap">
+                        <img src="../img/icons/filter-icon.svg" alt="filter-icon">
+                        <p class="all-catalog-header__filter-title">Открыть фильтр</p>
+                    </div>
+                </div>
+
+                <div class="filter">
+
+                    <div class="filter__wrap">
+                        <div class="filter__title-wrap">
+                            <p class="filter__title">Фильтр</p>
+                            <div class="filter__close"></div>
+                        </div>
+                        <ul class="filter__list">
+                            <li class="filter__item">
+                                <div class="filter__item-header">
+                                    <div class="filter__arrow"></div>
+                                    <span class="filter__item-name filter-application-name">Сфера применения</span>
+                                </div>
+                                <div class="filter__item-list-wrap filter-application-list">
+                                    <ul class="filter__item-list">
+                                        <li><span>Сельское хозяйство</span><span>76</span></li>
+                                        <li><span>Сыроделие</span><span>76</span></li>
+                                        <li><span>Индустриальная тара</span><span>76</span></li>
+                                        <li><span>Аренда</span><span>76</span></li>
+                                        <li><span>Утилизация отходов</span><span>76</span></li>
+                                        <li><span>Логистика</span><span>76</span></li>
+                                    </ul>
+                                    <div class="filter__item-more">
+                                        <span>Показать всё</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="filter__item">
+                                <div class="filter__item-header">
+                                    <div class="filter__arrow"></div>
+                                    <span class="filter__item-name filter-categories-name">Категории</span>
+                                </div>
+                                <div class="filter__item-list-wrap filter-categories-list">
+                                    <ul class="filter__item-list">
+                                        <li><span>Палеты и поддоны</span><span>76</span></li>
+                                        <li><span>Ящики</span><span>76</span></li>
+                                        <li><span>Большие контейнеры</span><span>76</span></li>
+                                        <li><span>Контейнеры ТКО</span><span>76</span></li>
+                                    </ul>
+                                    <div class="filter__item-more">
+                                        <span>Показать всё</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="filter__item">
+                                <div class="filter__item-header">
+                                    <div class="filter__arrow"></div>
+                                    <span class="filter__item-name filter-size-name">Размер, мм</span>
+                                </div>
+                                <div class="filter__item-list-wrap filter-size-list">
+                                    <ul class="filter__item-list">
+                                        <li><span>1200х800</span><span>76</span></li>
+                                        <li><span>1200х1000</span><span>76</span></li>
+                                        <li><span>1300х1000</span><span>76</span></li>
+                                        <li><span>1200х1200</span><span>76</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="filter__item">
+                                <div class="filter__item-header">
+                                    <div class="filter__arrow"></div>
+                                    <span class="filter__item-name filter-volume-name">Объем, л</span>
+                                </div>
+                                <div class="filter__item-list-wrap filter-volume-list">
+                                    <ul class="filter__item-list">
+                                        <li><span>1100</span><span>76</span></li>
+                                        <li><span>1600</span><span>76</span></li>
+                                        <li><span>1800</span><span>76</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="filter__item">
+                                <div class="filter__item-header">
+                                    <div class="filter__arrow"></div>
+                                    <span class="filter__item-name filter-shtabel-name">Штабелируемый</span>
+                                </div>
+                                <div class="filter__item-list-wrap filter-shtabel-list">
+                                    <ul class="filter__item-list">
+                                        <li><span>Да</span><span>76</span></li>
+                                        <li><span>Нет</span><span>76</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="filter__item">
+                                <div class="filter__item-header">
+                                    <div class="filter__arrow"></div>
+                                    <span class="filter__item-name filter-vklad-name">Вкладываемый</span>
+                                </div>
+                                <div class="filter__item-list-wrap filter-vklad-list">
+                                    <ul class="filter__item-list">
+                                        <li><span>Да</span><span>76</span></li>
+                                        <li><span>Нет</span><span>76</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="filter__button-wrap">
+                            <span class="filter__drop">Сбросить</span>
+                            <button id="submit-show" class="filter__button">Заказать звонок</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <ul class="all-catalog-header__sort-list">
+                    <li>
+                        <span class="all-catalog-header__sort-title sort-size-title">Размер, мм</span>
+                        <div class="all-catalog-header__sort-inner sort-size-content">
+                            <form action="#" class="all-catalog-header__checkbox-wrap">
+                                <p class="all-catalog-header__checkbox-inner">
+                                    <input type="checkbox" id="size-1" name="size-1"
+                                           class="all-catalog-header__checkbox">
+                                    <label class="all-catalog-header__checkbox-text"
+                                           for="size-1">1200&nbsp;x&nbsp;800</label>
+                                </p>
+                                <p class="all-catalog-header__checkbox-inner">
+                                    <input type="checkbox" id="size-2" name="size-2"
+                                           class="all-catalog-header__checkbox">
+                                    <label class="all-catalog-header__checkbox-text"
+                                           for="size-2">1200&nbsp;x&nbsp;1000</label>
+                                </p>
+                                <p class="all-catalog-header__checkbox-inner">
+                                    <input type="checkbox" id="size-3" name="size-3"
+                                           class="all-catalog-header__checkbox">
+                                    <label class="all-catalog-header__checkbox-text"
+                                           for="size-3">1300&nbsp;x&nbsp;1000</label>
+                                </p>
+                                <p class="all-catalog-header__checkbox-inner">
+                                    <input type="checkbox" id="size-4" name="size-4"
+                                           class="all-catalog-header__checkbox">
+                                    <label class="all-catalog-header__checkbox-text"
+                                           for="size-4">1200&nbsp;x&nbsp;1200</label>
+                                </p>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="all-catalog-header__sort-title sort-volume-title">Объём, л</span>
+                        <div class="all-catalog-header__sort-inner sort-volume-content">
+                            <form action="#" class="all-catalog-header__checkbox-wrap">
+                                <p class="all-catalog-header__checkbox-inner">
+                                    <input type="checkbox" id="volume-1" name="volume-1"
+                                           class="all-catalog-header__checkbox">
+                                    <label class="all-catalog-header__checkbox-text" for="volume-1">1100</label>
+                                </p>
+                                <p class="all-catalog-header__checkbox-inner">
+                                    <input type="checkbox" id="volume-2" name="volume-2"
+                                           class="all-catalog-header__checkbox">
+                                    <label class="all-catalog-header__checkbox-text" for="volume-2">1600</label>
+                                </p>
+                                <p class="all-catalog-header__checkbox-inner">
+                                    <input type="checkbox" id="volume-3" name="volume-3"
+                                           class="all-catalog-header__checkbox">
+                                    <label class="all-catalog-header__checkbox-text" for="volume-3">1800</label>
+                                </p>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="all-catalog-header__sort-title sort-shtabel-title">Штабелируемый</span>
+                        <div class="all-catalog-header__sort-inner sort-shtabel-content">
+                            <form action="#" class="all-catalog-header__checkbox-wrap">
+                                <p class="all-catalog-header__checkbox-inner">
+                                    <input type="checkbox" id="shtabel-yes" name="shtabel-yes"
+                                           class="all-catalog-header__checkbox">
+                                    <label class="all-catalog-header__checkbox-text" for="shtabel-yes">Да</label>
+                                </p>
+                                <p class="all-catalog-header__checkbox-inner">
+                                    <input type="checkbox" id="shtabel-no" name="shtabel-no"
+                                           class="all-catalog-header__checkbox">
+                                    <label class="all-catalog-header__checkbox-text" for="shtabel-no">Нет</label>
+                                </p>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="all-catalog-header__sort-title sort-vklad-title">Вкладываемый</span>
+                        <div class="all-catalog-header__sort-inner sort-vklad-content">
+                            <form action="#" class="all-catalog-header__checkbox-wrap">
+                                <p class="all-catalog-header__checkbox-inner">
+                                    <input type="checkbox" id="vklad-yes" name="vklad-yes"
+                                           class="all-catalog-header__checkbox">
+                                    <label class="all-catalog-header__checkbox-text" for="vklad-yes">Да</label>
+                                </p>
+                                <p class="all-catalog-header__checkbox-inner">
+                                    <input type="checkbox" id="vklad-no" name="vklad-no"
+                                           class="all-catalog-header__checkbox">
+                                    <label class="all-catalog-header__checkbox-text" for="vklad-no">Нет</label>
+                                </p>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <a class="all-catalog-header__button" href="#">Показать: 15&nbsp;000</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="all-catalog">
+        <div class="container">
+            <div class="all-catalog__wrap">
+
+
+                <div class="all-catalog-side">
+                    <div class="all-catalog-side__wrap">
+                        <ul class="all-catalog-side__filter-list">
+                            <li>
+                                <label class="all-catalog-side__filter-title filter-application-title">Сферы
+                                    применения</label>
+                                <div class="all-catalog-side__filter-inner-wrap filter-application-content">
+                                    <ul class="all-catalog-side__filter-inner-list">
+                                        <li>Все</li>
+                                        <li>Сельское хозяйство</li>
+                                        <li>Индустриальная тара</li>
+                                        <li>Утилизация отходов</li>
+                                        <li>Рыбная промышленность</li>
+                                        <li>Сыроделие</li>
+                                        <li>Логистика</li>
+                                        <li>Аренда</li>
+                                        <li>Мясо-молочная промышленность</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <label class="all-catalog-side__filter-title filter-garbage-containers-title">Контейнеры
+                                    для мусора</label>
+                                <div class="all-catalog-side__filter-inner-wrap filter-garbage-containers-content">
+                                    <ul class="all-catalog-side__filter-inner-list">
+                                        <li>Пластиковые паллеты</li>
+                                        <li>Решетки для заморозки</li>
+                                        <li>Поддоны для бутылей</li>
+                                        <li>Покрытия и решетки</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="all-catalog-side__filter-title filter-pallets-title">Паллеты и
+                                    поддоны</label>
+                                <div class="all-catalog-side__filter-inner-wrap filter-pallets-content">
+                                    <ul class="all-catalog-side__filter-inner-list">
+                                        <li>Пластиковые паллеты</li>
+                                        <li>Решетки для заморозки</li>
+                                        <li>Поддоны для бутылей</li>
+                                        <li>Покрытия и решетки</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="all-catalog-side__filter-title">Большие контейнеры</label>
+
+                            </li>
+                            <li>
+                                <label class="all-catalog-side__filter-title">Ящики</label>
+
+                            </li>
+                            <li>
+                                <label class="all-catalog-side__filter-title">Контейнеры ТКО</label>
+
+                            </li>
+                            <li>
+                                <label class="all-catalog-side__filter-title">Крупногабаритные контейнеры</label>
+
+                            </li>
+                            <li>
+                                <label class="all-catalog-side__filter-title">Вкладываемые кон-ры</label>
+
+                            </li>
+                            <li>
+                                <label class="all-catalog-side__filter-title">Складывающиеся кон-ры</label>
+
+                            </li>
+                            <li>
+                                <label class="all-catalog-side__filter-title">Полочные кон-ры</label>
+
+                            </li>
+                            <li>
+                                <label class="all-catalog-side__filter-title">Полочные кон-ры</label>
+
+                            </li>
+                            <li>
+                                <label class="all-catalog-side__filter-title">Тара в антистатическом исполнении</label>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="all-catalog-products">
+                    <div class="all-catalog-products__wrap">
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-1.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории</a>
+                            </div>
+                        </div>
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-2.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории в&nbsp;две строки</a>
+                            </div>
+                        </div>
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-1.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории</a>
+                            </div>
+                        </div>
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-2.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории в&nbsp;две строки</a>
+                            </div>
+                        </div>
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-1.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории</a>
+                            </div>
+                        </div>
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-2.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории в&nbsp;две строки</a>
+                            </div>
+                        </div>
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-1.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории</a>
+                            </div>
+                        </div>
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-2.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории в&nbsp;две строки</a>
+                            </div>
+                        </div>
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-1.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории</a>
+                            </div>
+                        </div>
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-2.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории в&nbsp;две строки</a>
+                            </div>
+                        </div>
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-1.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории</a>
+                            </div>
+                        </div>
+                        <div class="all-catalog-products__item">
+                            <a class="all-catalog-products__img" href="#">
+                                <img src="../img/all-catalog-products/all-catalog-products-2.png" alt="product">
+                            </a>
+                            <div class="all-catalog-products__text-wrap">
+                                <span class="all-catalog-products__info">В наличии</span>
+                                <a class="all-catalog-products__title" href="#">Складывающийся
+                                    контейнер</a>
+                                <a class="all-catalog-products__name" href="#">Название категории в&nbsp;две строки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-cat">
+        <div class="container">
+            <div class="about-cat__inner">
+                <div class="about-cat__content">
+                    <div class="about-cat__tag"><p>Более 1 000 товаров</p></div>
+                    <h2>О компании Техполимер ЭКО</h2>
+                    <p>Собственное производство контейнейров и других полезных товаров Задача пожаротушения металлообрабатывающих станков связана с внедрением в авиационной, аэрокосмической и оборонной промышленности металлообрабатывающих станков для механической обработки сплавов легких металлов, в том числе магния и титана. При механической обработке заготовок из этих сплавов образуется пожароопасная стружка различной толщины, которая накапливается в зоне обработки деталей. Возгорание такой стружки может произойти от низкоэнергетических источников загорания, что приводит к выходу обрабатывающего оборудования из строя и развитию пожара в помещении.</p>
+
+                    <h3>Контейнеры</h3>
+                    <p>Для пожаротушения стружки сплавов магния и титана могут быть использованы классические огнетушащие составы. Однако применение таких составов в условиях замкнутых объемов обрабатывающего оборудования затруднено, а зачастую невозможно из-за конструктивных особенностей. Кроме того, многие огнетушащие составы обладают высокой коррозионной активностью и способны вывести из строя дорогостоящее оборудование, как в результате тушения, так и при ложном срабатывании установки.</p>
+                    <p>Современным средством тушения стружки сплавов легких металлов являются инертные газы. При подаче в защищаемый объем они снижают уровень кислорода в атмосфере до концентраций, при которых не поддерживается горение. Вместе с тем, инертные газы не взаимодействуют с металлами, входящими в состав сплавов, являются экологически чистыми огнетушащими веществами и совершенно безопасны для человека и оборудования.</p>
+
+                    <h3>Складывающиеся контейнеры</h3>
+                    <p>В нормативно-технической документации отсутствуют сведения по выбору средств тушения сплавов магния и титана.Тушение стружки с помощью инертных газов возможно только в замкнутых объемах в пределах условно герметичного защитного кожуха. <br>Защита электромеханического оборудования (Автономные установки пожаротушения) Самой распространенной причиной возгорания станков на сегодняшний день являетс неисправность электрического оборудования. Короткое замыкание, перегрузка или перегре оборудования – вот далеко не полный перечень причин возможного возгорания. Более того риск возникновения и распространения  пожара многократно возрастает, когда шкаф управления и прочее электротехническое оборудование расположено в зоне, где затруднен ил исключен визуальный контакт персонала с защищаемым оборудованием.</p>
+                    <p>Такое оборудование отличает наличие ограждающих поверхностей, которые ограничивают объем изделия при наличии сравнительно небольших постоянно открытых проемов, а также высокая пожарная опасность из-за наличия пожарной нагрузки и потенциальных источников зажигания. Именно поэтому пожары оборудования шкафного исполнения - не редкость. Ущерб от таких пожаров определяется не только потерей материальных ценностей, но и перерывом в технологическом процессе. Последние потери оказываются весьма значительными и часто превышают первые. Такое оборудование отличает наличие ограждающих поверхностей, которые ограничивают объем изделия при наличии сравнительно небольших постоянно открытых проемов, а также высокая пожарная опасность из-за наличия пожарной.</p>
+                </div>
+                <div class="ads-banner about-cat__banner">
+                    <div class="ads-banner__item">
+                        <div class="ads-banner__content">
+                            <div class="ads-banner__title"><p>Доставка по всей России</p></div>
+                            <div class="ads-banner__text"><p>Экпресс доставка по России и всем странам СНГ</p></div>
+                        </div>
+                        <div class="ads-banner__circle"></div>
+                        <div class="ads-banner__img ads-banner__img--29"><img src="../img/adv-about/ads-1.png" alt=""></div>
+                    </div>
+                    <div class="ads-banner__item">
+                        <div class="ads-banner__content">
+                            <div class="ads-banner__title"><p>Скидка 15%</p></div>
+                            <div class="ads-banner__text"><p>Предоставляем скидку 15%
+                                на баки Колокольчик</p></div>
+                        </div>
+                        <div class="ads-banner__circle"></div>
+                        <div class="ads-banner__img ads-banner__img--27"><img src="../img/adv-about/ads-2.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__wrap-desk">
+                    <div class="footer__contacts">
+                        <ul class="footer__contacts-list">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Каталог продукции</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Аренда поддонов</a></li>
+                            <li><a href="#">Выкуп пластика</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__logo-wrap">
+                        <a class="footer__logo" href="#">
+                            <img src="../img/icons/logo-footer.png" alt="logo-techpolymer-eco">
+                        </a>
+                        <a href="#" class="footer__phone-text">8 800 999 99 99</a>
+                        <a href="#" class="footer__email-text">pochta@mail.ru</a>
+                        <a href="#" class="footer__request-call">
+                            <span class="footer__request-call-text">Заказать звонок</span>
+                            <img src="../img/icons/icon-phone.svg" alt="icon-email">
+                        </a>
+
+                    </div>
+                    <div class="footer__categories">
+                        <ul class="footer__categories-list">
+                            <li><a href="#">Категория каталога</a></li>
+                            <li><a href="#">Тестовая категория каталога</a></li>
+                            <li><a href="#">Категория каталога</a></li>
+                            <li><a href="#">Тестовая категория каталога</a></li>
+                            <li><a href="#">Категория каталога</a></li>
+                            <li><a href="#">Категория каталога</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrap-mobile">
+                    <div class="footer__logo-wrap-mobile">
+                        <a class="footer__logo-mobile" href="#">
+                            <img src="../img/icons/logo-footer.png" alt="logo-techpolymer-eco">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

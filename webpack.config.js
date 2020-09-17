@@ -6,7 +6,9 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 module.exports = {
     entry: {
         index: './src/index.js',
-        // cardProduct: './src/pages/card-product.js'
+        cardProduct: './src/pages/card-product.js',
+        catalog: './src/pages/catalog.js',
+        about: './src/pages/about.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -14,6 +16,7 @@ module.exports = {
     },
     mode: "development",
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWepackPlugin({
             template: "./src/index.html",
             filename: "./index.html",
@@ -26,7 +29,18 @@ module.exports = {
             inject: true,
             chunks: ['index'],
         }),
-        new CleanWebpackPlugin(),
+        new HtmlWepackPlugin({
+            template: "./src/pages/catalog.html",
+            filename: "./catalog.html",
+            inject: true,
+            chunks: ['index'],
+        }),
+        new HtmlWepackPlugin({
+            template: "./src/pages/about.html",
+            filename: "./about.html",
+            inject: true,
+            chunks: ['index'],
+        }),
     ],
     module: {
         rules: [

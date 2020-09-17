@@ -66,3 +66,20 @@ main {
 @import "fragments/similar-products";
 @import "fragments/pop-up";
 
+// catalog.html
+@import "fragments/catalog-main";
+@import "fragments/breadcrumbs-catalog-main";
+@import "fragments/carousel-catalog";
+@import "fragments/all-catalog-header";
+@import "fragments/all-catalog";
+@import "fragments/all-catalog-side";
+@import "fragments/all-catalog-products";
+@import "fragments/filter";
+
+// about.html
+@import "fragments/about-cat";
+@import "fragments/ads-banner";
+@import "fragments/adv-prod";
+@import "fragments/adv-about";
+
+@import "fragments/map";

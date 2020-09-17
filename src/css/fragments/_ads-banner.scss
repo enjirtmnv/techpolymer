@@ -1,0 +1,104 @@
+.ads-banner {
+    &__item {
+        position: relative;
+        width: 29rem;
+        height: 36.1rem;
+        background: linear-gradient(214.6deg, #DEDCE4 28.49%, #A5B1C7 91.79%);
+        margin-bottom: 2rem;
+        overflow: hidden;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__content {
+        padding: 3.4rem 2.9rem;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.5;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    &__text {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: #fff;
+    }
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 24rem;
+        &--29 {
+            width: 29rem;
+            right: -5.2rem;
+        }
+        &--27 {
+            width: 27rem;
+            right: -6.7rem;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__circle {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -3.6rem;
+        right: -5.6rem;
+        width: 24rem;
+        height: 24rem;
+        border-radius: 100%;
+        background-color: rgb(238,254,168);
+        background-image: 
+        linear-gradient(90deg, rgba(238,254,168,1) 100%, rgba(192,222,70,1) 100%);
+        &::after {
+            content: "";
+            width: 16rem;
+            height: 16rem;
+            border-radius: 100%;
+            background-color: #dedce4;
+        }
+    }
+    @media (max-width: 48em) {
+        &__item {
+            width: 100%;
+            height: 21.6rem * 2;
+            margin-bottom: 6rem;
+        }
+        &__content {
+            width: 37rem;
+            padding: 3.6rem 4.4rem;
+        }
+        &__title {
+            font-size: 3.6rem;
+        }
+        &__text {
+            font-size: 2.8rem;
+        }
+        &__circle {
+            width: 27.4rem * 2;
+            height: 27.4rem * 2;
+            bottom: -15rem;
+            right: -21rem;
+            &::after {
+                width: 11.5rem * 2;
+                height: 11.5rem * 2;
+            }
+        }
+        &__img {
+            &--29 {
+                width: 48rem;
+                right: -7.2rem;
+            }
+            &--27 {
+                width: 48rem;
+                right: -8.7rem;
+            }
+        }
+    }
+}

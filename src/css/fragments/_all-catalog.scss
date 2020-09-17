@@ -1,0 +1,8 @@
+.all-catalog{
+  background-color: #ffffff;
+  &__wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
