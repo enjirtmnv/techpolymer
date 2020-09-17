@@ -1,6 +1,5 @@
 .pallets-header {
   background-color: #ffffff;
-  padding: 10.8rem 0 0 0;
 
   &__wrap {
     width: 100%;
@@ -8,8 +7,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 3.8rem 0;
+    padding: 1.8rem 0 1.8rem 0;
     border-bottom: 1px solid #EBEEF2;
+    border-top: 1px solid #EBEEF2;
     @media (max-width: 48em) {
       display: flex;
       flex-direction: column;
@@ -24,6 +24,7 @@
     margin: 3.8rem 0 0 0;
     @media (max-width: 48em) {
       display: block;
+      margin: 0 0 0 0;
     }
   }
 
@@ -181,7 +182,7 @@
     transition: box-shadow 400ms ease;
 
     &:hover {
-      box-shadow: 0.5rem 0.5rem 4rem #c0cbe1;
+      box-shadow: 0.5rem 0.5rem 2rem #d1def5;
       transition: box-shadow 400ms ease;
     }
 

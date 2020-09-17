@@ -1,0 +1,91 @@
+.pallets-types {
+  background-color: #ffffff;
+  padding: 0 0 3.5rem 0;
+
+  &__nav {
+    padding: 6.1rem 0 7.2rem 0;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 48em) {
+      padding: 3.5rem 0 3.6rem 0;
+      border-bottom: 1px solid #EBEEF2;
+    }
+  }
+
+  &__title {
+    font-family: "Circe-Bold", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 1.25;
+    color: #202020;
+    margin: 0 0 3rem 0;
+    @media (max-width: 48em) {
+      font-size: 5rem;
+      line-height: 1.6;
+      text-align: center;
+      margin: 0 0 0.5em 0;
+    }
+  }
+
+  &__nav-list-wrap{
+    @media (max-width: 48em) {
+      width: 100%;
+      height: 7rem;
+      overflow-x: auto;
+      overflow-y: hidden;
+      border-top: 1px solid #EBEEF2;
+    }
+  }
+
+  &__nav-list-inner{
+    @media (max-width: 48em) {
+      width: 100%;
+      height: 12rem;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 48em) {
+      border-bottom: none;
+      height: 7rem;
+      width: 100%;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    li {
+      margin: 0 1.2rem 0 1.2rem;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 300ms ease;
+      font-family: 'Circe-Regular', serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #97A4BA;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      cursor: pointer;
+      @media (max-width: 48em) {
+        font-family: 'Circe-Bold', serif;
+        font-size: 2.8rem;
+        line-height: 3.8;
+      }
+      &:first-child {
+        margin: 0 1.2rem 0 0;
+      }
+
+      &:last-child {
+        margin: 0 0 0 1.2rem;
+      }
+    }
+    li.current{
+      font-family: 'Circe-Bold', serif;
+      color: #D7DDE6;
+    }
+  }
+}

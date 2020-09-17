@@ -1,6 +1,5 @@
 .all-catalog-header {
   background-color: #ffffff;
-  padding: 10.8rem 0 0 0;
 
   &__wrap {
     width: 100%;
@@ -25,6 +24,7 @@
     font-size: 4rem;
     line-height: 1.25;
     color: #202020;
+    margin: 0 0 3.8rem 0;
     @media (max-width: 48em) {
       font-size: 5rem;
       line-height: 1.6;
@@ -34,7 +34,6 @@
   &__filter{
     display: none;
     width: 100%;
-    margin: 3.8rem 0 0 0;
     @media (max-width: 48em) {
       display: block;
     }

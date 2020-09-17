@@ -2,12 +2,14 @@ import $ from 'jquery';
 
 $(document).ready(function(){
 
-    $('.all-catalog-header__filter-title').click(function(){
+    $('.filter-mobile').click(function(){
         $('.filter').addClass('show-filter');
+        $('html').addClass('lock');
     });
 
     $('.filter__close').click(function(){
         $('.filter').removeClass('show-filter');
+        $('html').removeClass('lock');
     });
 
     $('.filter-application-name').click(function(){
