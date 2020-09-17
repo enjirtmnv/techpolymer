@@ -44,18 +44,27 @@
                                 <div class="pop-up-call__inner">
                                     <div class="pop-up-call__close"></div>
                                     <p class="pop-up-call__subtitle">ТехполимерЭКО</p>
-                                    <p class="pop-up-call__title">Запрос цены</p>
+                                    <p class="pop-up-call__title">Заказать звонок</p>
                                     <form action="#" class="pop-up-call__form">
-                                        <label for="username-call"><input required type="text" name="username" id="username-call" class="pop-up-call__form-input" placeholder="Ф.И.О"></label>
+                                        <label for="username-call" class="pop-up-call__label-input">
+                                            <input required type="text" name="username" id="username-call"
+                                                   class="pop-up-call__input" placeholder="Ф.И.О">
+                                        </label>
 
-                                        <label for="tel-call"><input required type="tel" name="tel" id="tel-call" class="pop-up-call__form-input" placeholder="Телефон"></label>
+                                        <label for="tel-call" class="pop-up-call__label-input">
+                                            <input required type="tel" name="tel" id="tel-call"
+                                                   class="pop-up-call__input" placeholder="Телефон">
+                                        </label>
 
-                                        <textarea id="comment-call" class="pop-up-call__form-textarea" placeholder="Комментарий"></textarea>
+                                        <label for="comment-call" class="pop-up-call__label-textarea">
+                                            <textarea id="comment-call" class="pop-up-call__textarea"
+                                                      placeholder="Комментарий"></textarea>
+                                        </label>
 
-                                        <button id="submit-call" class="pop-up-call__form-button">Заказать звонок</button>
+                                        <button id="submit-call" class="pop-up-call__form-button">Заказать звонок
+                                        </button>
                                     </form>
                                 </div>
-
                             </div>
                         </div>
                     </li>
@@ -952,10 +961,18 @@
                 <p class="pop-up-request__subtitle">ТехполимерЭКО</p>
                 <p class="pop-up-request__title">Оставить заявку</p>
                 <form action="#" class="pop-up-request__form">
-                    <input required type="text" name="username" id="username-request" class="pop-up-request__form-input" placeholder="Ф.И.О">
-                    <input required type="tel" name="tel" id="tel-request" class="pop-up-request__form-input" placeholder="Телефон">
-                    <input type="email" name="email" id="email-request" class="pop-up-request__form-input" placeholder="E-mail">
-                    <textarea id="comment-request" class="pop-up-request__form-textarea" placeholder="Комментарий" res></textarea>
+                    <label for="username-request" class="pop-up-request__label-input">
+                        <input required type="text" name="username" id="username-request" class="pop-up-request__input" placeholder="Ф.И.О">
+                    </label>
+                    <label for="tel-request" class="pop-up-request__label-input">
+                        <input required type="tel" name="tel" id="tel-request" class="pop-up-request__input" placeholder="Телефон">
+                    </label>
+                    <label for="email-request" class="pop-up-request__label-input">
+                        <input type="email" name="email" id="email-request" class="pop-up-request__input" placeholder="E-mail">
+                    </label>
+                    <label for="comment-request" class="pop-up-request__label-textarea">
+                        <textarea id="comment-request" class="pop-up-request__textarea" placeholder="Комментарий"></textarea>
+                    </label>
                     <button id="submit-request" class="pop-up-request__form-button">Отправить</button>
                 </form>
             </div>

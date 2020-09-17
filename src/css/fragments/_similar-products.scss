@@ -61,7 +61,7 @@
       line-height: 1.5;
       color: #FFFFFF;
       &:hover{
-        box-shadow: 1rem 0 2.2rem #d1d1df;
+        box-shadow: 0rem -1rem 3rem #d1d1df;
         transition: box-shadow 400ms ease;
       }
       @media (max-width: 48em) {

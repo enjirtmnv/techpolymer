@@ -17,7 +17,7 @@ let SwiperCarouselCatalog = new Swiper('.carousel-catalog__swiper-container', {
     wrapperClass: 'carousel-catalog__swiper-wrapper',
     containerModifierClass: 'carousel-catalog__swiper-container-',
     speed: 700,
-    // loop: true,
+    loop: false,
     navigation: {
         nextEl: '.carousel-catalog__swiper-button-next',
         prevEl: '.carousel-catalog__swiper-button-prev',

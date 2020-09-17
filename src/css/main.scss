@@ -65,6 +65,7 @@ main {
 @import "fragments/card-product-more-info";
 @import "fragments/similar-products";
 @import "fragments/pop-up";
+@import "fragments/map";
 
 // catalog.html
 @import "fragments/catalog-main";
@@ -75,11 +76,14 @@ main {
 @import "fragments/all-catalog-side";
 @import "fragments/all-catalog-products";
 @import "fragments/filter";
+@import "fragments/about-cat";
+@import "fragments/banner";
+
+// catalog-pallets.html
+@import "fragments/breadcrumbs-catalog-pallets";
+@import "fragments/pallets-header";
 
 // about.html
-@import "fragments/about-cat";
-@import "fragments/ads-banner";
 @import "fragments/adv-prod";
 @import "fragments/adv-about";
 
-@import "fragments/map";

@@ -8,6 +8,7 @@ module.exports = {
         index: './src/index.js',
         cardProduct: './src/pages/card-product.js',
         catalog: './src/pages/catalog.js',
+        catalogPallets: './src/pages/catalog-pallets.js',
         about: './src/pages/about.js'
     },
     output: {
@@ -36,11 +37,18 @@ module.exports = {
             chunks: ['index'],
         }),
         new HtmlWepackPlugin({
+            template: "./src/pages/catalog-pallets.html",
+            filename: "./catalog-pallets.html",
+            inject: true,
+            chunks: ['index'],
+        }),
+        new HtmlWepackPlugin({
             template: "./src/pages/about.html",
             filename: "./about.html",
             inject: true,
             chunks: ['index'],
         }),
+
     ],
     module: {
         rules: [

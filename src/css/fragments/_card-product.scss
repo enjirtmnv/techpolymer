@@ -193,12 +193,12 @@ $borderColors: (
     input[type="radio"]{
       display: none;
       &:checked + label {
-        span { transform: scale(0.67); }
+        span { transform: scale(0.7); }
         @each $name, $value in $borderColors {
           .#{$name} {
             //outline: 0.2rem solid lighten($value, 25%);
             outline: 0.2rem solid $value;
-            outline-offset: 0.8rem;
+            outline-offset: 0.55rem;
           }
         }
       }
